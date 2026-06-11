@@ -29,6 +29,22 @@ eleventyNavigation:
       <li><a href="/directory/"><strong>Directory</strong><span>Who does what, and how to reach them.</span></a></li>
     </ul>
 
+    <h2>Around Abernethy</h2>
+    <div class="photo-band">
+      <figure>
+        <img src="/img/banner-tour-de-ladd.jpg" alt="Dozens of kids on bikes lined up with their families for the Tour de Ladd" loading="lazy">
+        <figcaption>Tour de Ladd — the whole school on wheels.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/mural-finished.jpg" alt="The finished Abernethy Elementary centennial mural in bright colors along the schoolyard wall" loading="lazy">
+        <figcaption>Our centennial mural — designed with students, painted by the whole neighborhood.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/banner-fund-run.jpg" alt="Families cheering under a rainbow balloon arch at the Fun(d) Run" loading="lazy">
+        <figcaption>Under the arch at the Fun(d) Run.</figcaption>
+      </figure>
+    </div>
+
     <h2>Abernethy Elementary School</h2>
     <p>2421 SE Orange Avenue, Portland, OR 97214 · Main Office: <a href="tel:+15039166190">(503) 916-6190</a> · Office Fax: (503) 916-2600</p>
     <ul>

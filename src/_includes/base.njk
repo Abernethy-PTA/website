@@ -45,6 +45,9 @@
       {%- for crumb in crumbs %} <span aria-hidden="true">→</span> <a href="{{ crumb.url }}">{{ crumb.title }}</a>{%- endfor %}
     </nav>
     {%- endif %}
+    {%- if banner %}
+    <img class="page-banner" src="{{ banner }}" alt="{{ bannerAlt or '' }}">
+    {%- endif %}
     <h1>{{ title }}</h1>
     <div class="content">
       {{ content | safe }}

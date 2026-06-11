@@ -1,5 +1,7 @@
 ---
 title: Events
+banner: /img/banner-tour-de-ladd.jpg
+bannerAlt: Dozens of kids on bikes lined up with their families for the Tour de Ladd
 eleventyNavigation:
   key: Events
   order: 3

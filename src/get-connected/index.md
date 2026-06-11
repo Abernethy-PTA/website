@@ -1,5 +1,7 @@
 ---
 title: Get Connected
+banner: /img/banner-gazebo.jpg
+bannerAlt: A colorful crowd of kids and families gathered at the gazebo
 eleventyNavigation:
   key: Get Connected
   order: 1

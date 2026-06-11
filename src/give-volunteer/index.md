@@ -1,5 +1,7 @@
 ---
 title: Give & Volunteer
+banner: /img/banner-mural-day.jpg
+bannerAlt: Kids on ladders painting the Pacific Wonderland mural on the schoolyard wall
 eleventyNavigation:
   key: Give & Volunteer
   order: 2
