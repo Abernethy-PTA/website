@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and page.url != "/" %}{{ title }} · Abernethy PTA{% else %}Abernethy PTA · Supporting Abernethy Elementary, Portland OR{% endif %}</title>
+  <meta name="description" content="{{ description or "The Abernethy Elementary School PTA — engaging and empowering families and communities to advocate for all children." }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/logo.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/">
+      <img class="wordmark-logo" src="/img/logo.png" alt="" width="44" height="44">
+      <span class="wordmark-text">Abernethy <em>PTA</em></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-box" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle" aria-hidden="true">Menu</label>
+      <ul>
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li><a href="{{ entry.url }}"{% if page.url == entry.url or (entry.url != "/" and page.url.startsWith(entry.url)) %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+      {%- endfor %}
+        <li><a class="btn btn-donate" href="https://abernethyelementaryschool.betterworld.org/campaigns/abernethy-pta-direct-donations-2">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  {%- if page.url == "/" %}
+  {{ content | safe }}
+  {%- else %}
+  <div class="wrap page">
+    {%- if eleventyNavigation.parent %}
+    {%- set crumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      {%- for crumb in crumbs %} <span aria-hidden="true">→</span> <a href="{{ crumb.url }}">{{ crumb.title }}</a>{%- endfor %}
+    </nav>
+    {%- endif %}
+    <h1>{{ title }}</h1>
+    <div class="content">
+      {{ content | safe }}
+    </div>
+    {%- if eleventyNavigation %}
+    {%- set children = collections.all | eleventyNavigation(eleventyNavigation.key) %}
+    {%- if children.length %}
+    <nav class="section-cards" aria-label="In this section">
+      <h2 class="section-cards-title">In this section</h2>
+      <ul>
+      {%- for child in children %}
+        {%- set childSummary = collections.all | summaryFor(child.url) %}
+        <li><a href="{{ child.url }}"><strong>{{ child.title }}</strong>{% if childSummary %}<span>{{ childSummary }}</span>{% endif %}</a></li>
+      {%- endfor %}
+      </ul>
+    </nav>
+    {%- endif %}
+    {%- endif %}
+  </div>
+  {%- endif %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-wordmark">Abernethy <em>PTA</em></p>
+      <p>PTA's mission is to make every child's potential a reality by engaging and empowering families and communities to advocate for all children.</p>
+      <p><strong>PTA Nonprofit Tax ID 93-1008897</strong><br>
+      <a href="mailto:help@supportabernethy.org">help@supportabernethy.org</a></p>
+    </div>
+    <div>
+      <h2>Abernethy Elementary School</h2>
+      <p>2421 SE Orange Avenue<br>Portland, OR 97214</p>
+      <p>Main Office: <a href="tel:+15039166190">(503) 916-6190</a><br>
+      Office Fax: (503) 916-2600</p>
+    </div>
+    <div>
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8ErwThzeSJ7HJteW4dEAe8q52z1XF-heD1jxvWrl4knqQ4Q/viewform">PTA Check Request Form</a></li>
+        <li><a href="https://www.oregonpta.org/membership/joinnow/16880">Join the PTA</a></li>
+        <li><a href="https://www.konstella.com/p/abernethy">Join Konstella</a></li>
+        <li><a href="https://abernethyelementaryschool.betterworld.org/campaigns/abernethy-pta-direct-donations-2">Donate</a></li>
+        <li><a href="/meetings/">Meetings &amp; Minutes</a></li>
+        <li><a href="/directory/">PTA Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

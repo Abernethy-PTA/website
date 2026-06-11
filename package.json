@@ -1,0 +1,13 @@
+{
+  "name": "supportabernethy-site",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-navigation": "^1.0.5"
+  }
+}
