@@ -1,7 +1,9 @@
 const navigationPlugin = require("@11ty/eleventy-navigation");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(navigationPlugin);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
 
@@ -12,6 +14,9 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    // PATH_PREFIX is "/website/" while previewing at abernethy-pta.github.io/website/;
+    // unset (i.e. "/") once the site is served at supportabernethy.org
+    pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
       includes: "_includes",
