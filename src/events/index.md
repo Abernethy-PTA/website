@@ -15,12 +15,12 @@ PTA events bring the Abernethy community together all year — and many power th
 | --- | --- |
 | [Mural Community Painting Day](https://give.supportabernethy.org) | Saturday, July 25, 2026 |
 | Tour de Ladd | Wednesday, October 7, 2026 |
+| Field Day | Wednesday, October 28, 2026 |
 | Annual Appeal kickoff | Monday, November 2, 2026 |
 | Holiday Shoppe | Friday–Saturday, December 11–12, 2026 |
 | Fun(d) Run | Thursday, March 11, 2027 |
 | [Abernethy Auction](https://auction.supportabernethy.org) | Saturday, April 3, 2027 |
 | [Carnival](https://carnival.supportabernethy.org) | Friday, May 14, 2027 |
-| Field Day | Week of June 1–4, 2027 |
 
 ## The lineup
 
