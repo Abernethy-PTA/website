@@ -7,7 +7,7 @@ eleventyNavigation:
 
 <section class="hero">
   <div class="wrap">
-    <h1>Every child's potential,<br>made <em>real</em>.</h1>
+    <h1>A neighborhood school where we support one another<br>to reach our full potential.</h1>
     <p>Welcome to the official website of the Abernethy Elementary School PTA. We're so glad you're here! PTA's mission is to make every child's potential a reality by engaging and empowering families and communities to advocate for all children — and we can only do that with your help.</p>
     <div class="btn-row">
       <a class="btn btn-tomato" href="https://www.oregonpta.org/membership/joinnow/16880">Join the PTA</a>
