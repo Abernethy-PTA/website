@@ -61,7 +61,7 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 
 | Committee | Who |
 | --- | --- |
-| After School Programs | Kate |
+| After School Programs | Alex Dooley, Kate Haber |
 | Field Day | Stacey Milton, Hilary Waks |
 | Holiday Shoppe | Richelle Sandoval |
 | Lost and Found | Phoebe Wayne, with Ashley Cernell |
