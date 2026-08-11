@@ -63,7 +63,7 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 | --- | --- |
 | After School Programs | Kate |
 | Field Day | Stacey Milton, Hilary Waks |
-| Holiday Shoppe | Richelle |
+| Holiday Shoppe | Richelle Sandoval |
 | Lost and Found | Phoebe Wayne, with Ashley Cernell |
 | Mini Grants | Julia Barrett, Abra Cooper |
 | New Family Connections | Quinn Keogh |
