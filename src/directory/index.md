@@ -37,12 +37,12 @@ Who does what on the Abernethy PTA. To reach anyone listed here — or to claim 
 | Role | Who |
 | --- | --- |
 | Annual Appeal | Kandi Foley |
-| Auction | Britt Windler |
+| Auction | Open — volunteer! |
 | Tour de Ladd | Aaron Stoertz |
 | Fun(d) Run | Ashley Wendler |
 | Century Campaign | Aaron Stoertz, Meredith Barrett, Lara Berman |
 | Read-a-Thon | Open — volunteer! |
-| BottleDrop | Britt Windler |
+| BottleDrop | Anna DiBenedetto |
 | Business Outreach | Open — volunteer! |
 
 ## Carnival Committee
@@ -63,10 +63,10 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 | --- | --- |
 | After School Programs | Kate |
 | Field Day | Stacey Milton, Hilary Waks |
-| Holiday Shoppe | Open — volunteer! |
+| Holiday Shoppe | Richelle |
 | Lost and Found | Phoebe Wayne, with Ashley Cernell |
 | Mini Grants | Julia Barrett, Abra Cooper |
-| New Family Connections | Open — volunteer! |
+| New Family Connections | Quinn Keogh |
 | Social Media | TBD |
 | Spirit Wear | Ashley Cernell, Dani Loureiro |
 | Staff/Teacher Appreciation | Open — volunteer! |
