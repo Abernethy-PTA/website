@@ -3,7 +3,7 @@ title: Setting Up Your PTA Account
 summary: Claim your @supportabernethy.org Google Workspace account.
 ---
 
-Welcome, and thanks for volunteering! This page helps you set up your PTA email, contacts, calendar, and Drive. The PTA uses Google Workspace. Help: Doug Lee at [help@supportabernethy.org](mailto:help@supportabernethy.org).
+Welcome, and thanks for volunteering! This page helps you set up your PTA email, contacts, calendar, and Drive. The PTA uses Google Workspace. Help: [help@supportabernethy.org](mailto:help@supportabernethy.org).
 
 ## Claiming your account
 
