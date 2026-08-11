@@ -49,7 +49,7 @@ eleventyNavigation:
     <p>2421 SE Orange Avenue, Portland, OR 97214 · Main Office: <a href="tel:+15039166190">(503) 916-6190</a> · Office Fax: (503) 916-2600</p>
     <ul>
       <li>Principal: Melissa Dunn — <a href="mailto:mdunn2@pps.net">mdunn2@pps.net</a></li>
-      <li>Principal Secretary: Elise Darling — <a href="mailto:edarling@pps.net">edarling@pps.net</a></li>
+      <li>Principal Secretary: Meredith McCreight — <a href="mailto:mmccreight@pps.net">mmccreight@pps.net</a></li>
       <li>School Secretary: Christine Olsen — <a href="mailto:colsen1@pps.net">colsen1@pps.net</a></li>
     </ul>
     <p style="margin-bottom:3rem"><strong>PTA Nonprofit Tax ID 93-1008897</strong> · <a href="mailto:help@supportabernethy.org">help@supportabernethy.org</a></p>
