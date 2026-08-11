@@ -1,10 +1,6 @@
 ---
 title: Setting Up Your PTA Account
 summary: Claim your @supportabernethy.org Google Workspace account.
-eleventyNavigation:
-  key: Setting Up Your PTA Account
-  parent: Help
-  order: 3
 ---
 
 Welcome, and thanks for volunteering! This page helps you set up your PTA email, contacts, calendar, and Drive. The PTA uses Google Workspace. Help: Doug Lee at [help@supportabernethy.org](mailto:help@supportabernethy.org).
@@ -27,4 +23,4 @@ PTA files live in **Shared Drives** — create and move team files into the appr
 
 ## PTA contacts
 
-The [directory page](/help/directory/) is public. Mailing lists: pta@ (all volunteers), board@ (14 voting members), executive@ (Presidents, Vice President, Treasurer, Secretary). Mobile numbers are available at [contacts.google.com/directory](https://contacts.google.com/directory) when logged into your PTA account (volunteer-only).
+The [directory page](/directory/) is public. Mailing lists: pta@ (all volunteers), board@ (14 voting members), executive@ (Presidents, Vice President, Treasurer, Secretary). Mobile numbers are available at [contacts.google.com/directory](https://contacts.google.com/directory) when logged into your PTA account (volunteer-only).
