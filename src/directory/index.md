@@ -67,7 +67,7 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 | Lost and Found | Phoebe Wayne, with Ashley Cernell |
 | Mini Grants | Julia Barrett, Abra Cooper |
 | New Family Connections | Quinn Keogh |
-| Social Media | TBD |
+| Social Media | Lauren McCune |
 | Spirit Wear | Ashley Cernell, Dani Loureiro |
 | Staff/Teacher Appreciation | Open — volunteer! |
-| Yearbook | Rachel Torchia, Ashley Cernell |
+| Yearbook | Rachel Torchia, Ashley Cernell, Stacey Milton |
