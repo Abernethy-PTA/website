@@ -29,7 +29,7 @@ Start here: [PPS kindergarten info](https://www.pps.net/kindergarten) · [Enroll
 
 ## After school programs
 
-See the [current list of enrichment programs at Abernethy](https://docs.google.com/spreadsheets/d/e/2PACX-1vQR2V8dBt1y-lvpcrWFYKuZWs7RcRkhWS716swSvwEp613i4siDCa2Qg6aJIPoUZkorIC5ndCWK6eWG/pubhtml) — classes are added as programs receive permission to operate onsite. Providers: apply via [Facilitron](https://www.facilitron.com/aks97214). Questions either way: [afterschool@supportabernethy.org](mailto:afterschool@supportabernethy.org)
+See the [fall schedule of enrichment programs at Abernethy](/programs/after-school/) — classes are added as programs receive permission to operate onsite. Providers: apply via [Facilitron](https://www.facilitron.com/aks97214). Questions either way: [afterschool@supportabernethy.org](mailto:afterschool@supportabernethy.org)
 
 ## Join the PTA
 

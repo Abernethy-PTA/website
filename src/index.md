@@ -21,6 +21,7 @@ eleventyNavigation:
   <div class="wrap">
     <h2>Find your way in</h2>
     <ul class="home-cards">
+      <li><a href="/programs/after-school/"><strong>After School Programs</strong><span>The fall enrichment schedule — music, art, sports, science, and more.</span></a></li>
       <li><a href="/get-connected/"><strong>Get Connected</strong><span>Konstella, ParentVue, ParentSquare, school links, and how to plug in.</span></a></li>
       <li><a href="/give-volunteer/"><strong>Give &amp; Volunteer</strong><span>Become a volunteer or support the PTA financially.</span></a></li>
       <li><a href="/events/"><strong>Events</strong><span>Tour de Ladd, Holiday Shoppe, Fun(d) Run, Auction, Carnival, and more.</span></a></li>
