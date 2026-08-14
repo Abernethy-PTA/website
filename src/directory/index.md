@@ -61,6 +61,7 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 
 | Committee | Who |
 | --- | --- |
+| Active Transportation | Lauren McCune |
 | After School Programs | Alex Dooley, Kate Haber |
 | Field Day | Stacey Milton, Hilary Waks |
 | Holiday Shoppe | Richelle Sandoval |
