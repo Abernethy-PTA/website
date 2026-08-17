@@ -12,6 +12,8 @@ eleventyNavigation:
 
 No meetings in December or June.
 
+How we operate — meetings, officers, committees, and budget rules — is spelled out in the [Standing Rules](/meetings/standing-rules/).
+
 ## 2026–27 schedule
 
 | Month | Board | Community |
