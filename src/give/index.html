@@ -50,7 +50,7 @@
 
     /* ---- NAV ---- */
     nav {
-      position: fixed; top: 36px; width: 100%; z-index: 100;
+      position: fixed; top: 0; width: 100%; z-index: 100;
       display: flex; justify-content: space-between; align-items: center;
       padding: 0 1.5rem; height: 56px;
       background: var(--black);
@@ -91,7 +91,7 @@
 
     /* ---- HERO ---- */
     .hero {
-      margin-top: 92px; min-height: calc(100vh - 92px);
+      margin-top: 56px; min-height: calc(100vh - 56px);
       display: grid; grid-template-rows: auto 1fr auto;
       background: var(--black); color: var(--white);
       position: relative; overflow: hidden;
@@ -728,13 +728,6 @@
   </style>
 </head>
 <body>
-
-  <div class="topbar">
-    <a href="#paint-day">
-      <span class="tb-full">🎨 Finish the mural &mdash; final painting day Saturday, July 25, 9 AM&ndash;1 PM · <span class="tb-arrow">Join us &rarr;</span></span>
-      <span class="tb-short">🎨 Paint day July 25! <span class="tb-arrow">&rarr;</span></span>
-    </a>
-  </div>
 
   <nav>
     <div class="nav-logo">
