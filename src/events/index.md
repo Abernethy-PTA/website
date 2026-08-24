@@ -13,14 +13,14 @@ PTA events bring the Abernethy community together all year — and many power th
 
 | Event | When |
 | --- | --- |
-| [Mural Community Painting Day](https://give.supportabernethy.org) | Saturday, July 25, 2026 |
+| [Mural Community Painting Day](/give/) | Saturday, July 25, 2026 |
 | Tour de Ladd | Wednesday, October 7, 2026 |
 | Field Day | Wednesday, October 28, 2026 |
 | Annual Appeal kickoff | Monday, November 2, 2026 |
 | Holiday Shoppe | Friday–Saturday, December 11–12, 2026 |
 | Fun(d) Run | Thursday, March 11, 2027 |
-| [Abernethy Auction](https://auction.supportabernethy.org) | Saturday, April 3, 2027 |
-| [Carnival](https://carnival.supportabernethy.org) | Friday, May 21, 2027 |
+| [Abernethy Auction](/auction/) | Saturday, April 3, 2027 |
+| [Carnival](/carnival/) | Friday, May 21, 2027 |
 
 ## The lineup
 
@@ -32,8 +32,8 @@ PTA events bring the Abernethy community together all year — and many power th
 
 **Fun(d) Run** — our spring jog-a-thon. Students run a 1/5-mile course for 30 minutes; pledge per lap or flat. 100% of proceeds go to the PTA. [funrun@supportabernethy.org](mailto:funrun@supportabernethy.org)
 
-**[Abernethy Auction](https://auction.supportabernethy.org)** — our biggest grown-ups-night-out fundraiser, with its own website.
+**[Abernethy Auction](/auction/)** — our biggest grown-ups-night-out fundraiser, with its own website.
 
-**[Carnival](https://carnival.supportabernethy.org)** — inflatables, games, face painting, food trucks, Cake-a-Palooza. Details on the carnival site.
+**[Carnival](/carnival/)** — inflatables, games, face painting, food trucks, Cake-a-Palooza. Details on the carnival site.
 
 **Movie Nights & Dine for Dollars** — family film nights in the auditorium (BYO dinner, not a drop-off event) and restaurant nights that give a cut to the PTA. Watch Konstella for dates.

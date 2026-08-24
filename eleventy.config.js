@@ -7,6 +7,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
 
+  // Standalone event sites (migrated from their own repos/subdomains).
+  // Copied verbatim — their HTML must not be run through the template engine.
+  for (const site of ["carnival", "auction", "give"]) {
+    eleventyConfig.addPassthroughCopy(`src/${site}`);
+    eleventyConfig.ignores.add(`src/${site}/**`);
+  }
+
   // Look up a page's `summary` front matter by URL (used for section cards)
   eleventyConfig.addFilter("summaryFor", (collection, url) => {
     const match = collection.find((item) => item.url === url);

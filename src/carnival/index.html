@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abernethy Elementary Carnival — Save the Date: Friday, May 21, 2027</title>
+  <meta name="description" content="The Abernethy Elementary School Carnival returns Friday, May 21, 2027. We're looking for parent volunteers to help lead it. See the 2026 recap below.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Nunito:wght@400;600;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fdf4dd;
+      --sky: #d8ecf3;
+      --sky-deep: #bcd9e4;
+      --navy: #1d3a5f;
+      --navy-deep: #13284a;
+      --coral: #ec7d72;
+      --coral-deep: #c85a52;
+      --orange: #e89a3a;
+      --teal: #5b9a92;
+      --grass: #cfe3b4;
+      --grass-deep: #a8c889;
+      --blacktop: #d8cfc0;
+      --sidewalk: #ebe0c9;
+      --ink: #2a2a3a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', -apple-system, system-ui, sans-serif;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--sky) 40%, var(--sky-deep) 100%);
+      background-attachment: fixed;
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      background: rgba(253, 244, 221, 0.9);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(29, 58, 95, 0.12);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 28px;
+      justify-content: center;
+      list-style: none;
+      padding: 14px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    nav a {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.78rem;
+      color: var(--navy);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--coral); }
+
+    /* ---- Sparkles (asterisk confetti) ---- */
+    .sparkles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .sparkles span {
+      position: absolute;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      user-select: none;
+      line-height: 1;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 40px 20px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-banner {
+      display: block;
+      width: 100%;
+      max-width: 820px;
+      height: auto;
+      margin: 0 auto -6%;
+    }
+    .hero-eyebrow {
+      font-family: 'Caveat', cursive;
+      font-size: 1.55rem;
+      color: var(--coral);
+      letter-spacing: 0.08em;
+      margin-bottom: -4px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: var(--coral);
+      opacity: 0.55;
+    }
+    .tree-icon {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      vertical-align: middle;
+      margin: 0 6px;
+    }
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      font-size: clamp(4.5rem, 16vw, 10.5rem);
+      color: var(--navy);
+      line-height: 0.9;
+      letter-spacing: 0.01em;
+      margin: 4px 0 10px;
+      position: relative;
+      z-index: 2;
+    }
+    .ribbon {
+      position: relative;
+      display: inline-block;
+      background: var(--coral);
+      color: var(--cream);
+      padding: 14px 46px 16px;
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 8px 0 4px;
+      box-shadow: 0 6px 0 rgba(200, 90, 82, 0.25);
+    }
+    .ribbon::before, .ribbon::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 24px;
+      height: 100%;
+      background: var(--coral-deep);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+    .ribbon::before { left: -20px; clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+    .ribbon::after { right: -20px; }
+    .ribbon .line2 { display: block; font-size: 0.82em; margin-top: 2px; }
+    .hero-pregame {
+      font-family: 'Caveat', cursive;
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-top: 22px;
+      opacity: 0.85;
+    }
+    .hero-pregame .sp { color: var(--coral); margin: 0 6px; }
+
+    .hero-tagline {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--orange);
+      font-size: clamp(1.6rem, 4.4vw, 2.6rem);
+      line-height: 1;
+      letter-spacing: 0.01em;
+      margin: 48px auto 8px;
+      max-width: 640px;
+    }
+    .hero-tagline .l1 { display: block; transform: rotate(-1.5deg); }
+    .hero-tagline .l2 { display: block; color: var(--coral); transform: rotate(1deg); margin-top: 6px; }
+
+    .hero-cta-row {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 0 rgba(0,0,0,0.08);
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(0,0,0,0.1); }
+    .btn-primary { background: var(--coral); color: var(--cream); }
+    .btn-secondary { background: var(--navy); color: var(--cream); }
+
+    /* ---- Section ---- */
+    section.chapter {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+    .chapter-head {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .chapter-eyebrow {
+      font-family: 'Caveat', cursive;
+      font-size: 1.4rem;
+      color: var(--coral);
+    }
+    .chapter-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+    .chapter-sub {
+      font-family: 'Nunito', sans-serif;
+      color: var(--navy);
+      opacity: 0.75;
+      margin-top: 6px;
+      font-size: 1.02rem;
+    }
+
+    /* ---- Map ---- */
+    .map-wrap {
+      background: var(--cream);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: 0 12px 40px rgba(29, 58, 95, 0.12), 0 0 0 1px rgba(29, 58, 95, 0.06);
+    }
+    .map-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      overflow: visible;
+    }
+    .map-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+    }
+    .map-stage {
+      position: relative;
+      display: block;
+      border-radius: 16px;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    /* ---- Indoor games map ---- */
+    .indoor-wrap {
+      background: var(--cream);
+      border-radius: 28px;
+      padding: 22px 18px 24px;
+      box-shadow: 0 12px 40px rgba(29, 58, 95, 0.12), 0 0 0 1px rgba(29, 58, 95, 0.06);
+    }
+    .indoor-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .indoor-room-label {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 30px;
+      fill: var(--navy);
+      text-anchor: middle;
+      letter-spacing: 0.16em;
+    }
+    .indoor-tile-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      fill: var(--navy);
+      text-anchor: middle;
+      letter-spacing: 0.04em;
+    }
+    .map-hot {
+      position: absolute;
+      display: block;
+      border-radius: 8px;
+      background: transparent;
+      transition: background 0.15s, transform 0.1s;
+      -webkit-tap-highlight-color: rgba(29, 58, 95, 0.12);
+    }
+    @media (hover: hover) {
+      .map-hot:hover { background: rgba(29, 58, 95, 0.08); }
+    }
+    .map-hot:focus-visible {
+      outline: 2px solid rgba(29, 58, 95, 0.45);
+      outline-offset: 1px;
+    }
+    .map-hot:active { transform: scale(0.97); }
+    .map-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 22px;
+      justify-content: center;
+      margin-top: 18px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    .map-legend-item { display: inline-flex; align-items: center; gap: 8px; }
+    .map-legend-swatch { width: 14px; height: 14px; border-radius: 4px; }
+
+    /* Map text styles */
+    .map-label-building {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      fill: var(--navy);
+      opacity: 0.55;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+    .map-label-room {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      fill: var(--navy);
+      opacity: 0.5;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .map-label-zone {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      fill: var(--navy);
+      opacity: 0.6;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .pin-label {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      fill: var(--navy);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-anchor: middle;
+    }
+    .pin-icon {
+      font-size: 18px;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+
+    /* ---- Bigger CTA ---- */
+    .btn.big { font-size: 1.05rem; padding: 18px 36px; }
+    .cta-center { text-align: center; margin: 8px 0 36px; }
+
+    /* ---- Wristband pricing ---- */
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 960px;
+      margin: 0 auto 24px;
+    }
+    .price-card {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 24px 16px 20px;
+      text-align: center;
+      box-shadow: 0 4px 0 rgba(29,58,95,0.08);
+      border: 2px solid rgba(29,58,95,0.08);
+    }
+    .price-card.highlight {
+      background: var(--coral);
+      color: var(--cream);
+      border-color: var(--coral-deep);
+    }
+    .price-card.highlight .price-amount { color: var(--cream); }
+    .price-card.highlight .price-label,
+    .price-card.highlight .price-note { color: var(--cream); }
+    .price-amount {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      font-size: clamp(2.4rem, 4.5vw, 3.2rem);
+      color: var(--coral);
+      line-height: 1;
+    }
+    .price-label {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+      margin-top: 6px;
+    }
+    .price-note {
+      font-family: 'Caveat', cursive;
+      font-size: 1.05rem;
+      color: var(--navy);
+      opacity: 0.6;
+      margin-top: 2px;
+    }
+
+    /* ---- Info cards ---- */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+    }
+    .info-card {
+      background: var(--cream);
+      border-radius: 18px;
+      padding: 22px 22px 20px;
+      box-shadow: 0 4px 0 rgba(29,58,95,0.06);
+      border: 1px solid rgba(29,58,95,0.08);
+    }
+    .info-card.soft {
+      background: rgba(91,154,146,0.12);
+      border-color: rgba(91,154,146,0.3);
+    }
+    .info-eyebrow {
+      font-family: 'Caveat', cursive;
+      font-size: 1.3rem;
+      color: var(--coral);
+      margin-bottom: 6px;
+    }
+    .info-card p { margin: 0 0 8px; font-size: 0.97rem; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card a { color: var(--coral-deep); font-weight: 700; }
+    .info-small { font-size: 0.88rem; opacity: 0.75; }
+    .clean-list { list-style: none; padding: 0; margin: 0 0 10px; }
+    .clean-list li { padding: 5px 0; border-bottom: 1px dashed rgba(29,58,95,0.12); font-size: 0.95rem; }
+    .clean-list li:last-child { border-bottom: none; }
+
+    /* ---- Inflatable grid ---- */
+    .inflatable-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .inflatable-card {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 18px 20px 22px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+      border: 2px solid rgba(29,58,95,0.08);
+      transition: transform 0.2s;
+    }
+    .inflatable-card:hover {
+      transform: translateY(-4px);
+    }
+    .inflatable-viz {
+      background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 100%);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(29,58,95,0.08);
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .inflatable-viz img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 4px 6px rgba(29,58,95,0.15));
+    }
+    .inflatable-viz svg { width: 100%; height: auto; display: block; }
+    .inflatable-card h3 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--card-deep, var(--navy));
+      font-size: 1.5rem;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+    .inflatable-card p {
+      font-size: 0.93rem;
+      color: var(--ink);
+      opacity: 0.82;
+      line-height: 1.5;
+    }
+
+    /* ---- Activity grid ---- */
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .activity-col {
+      background: var(--cream);
+      border-radius: 18px;
+      padding: 22px 26px;
+      box-shadow: 0 4px 0 rgba(29,58,95,0.06);
+    }
+    .activity-col h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    .activity-list { list-style: none; padding: 0; }
+    .activity-list li {
+      padding: 7px 0;
+      border-bottom: 1px dashed rgba(29,58,95,0.12);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .activity-list li:last-child { border-bottom: none; }
+    .activity-list .extra {
+      color: var(--coral);
+      font-style: normal;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-left: auto;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-blue { background: #5ea4c4; }
+    .dot-orange { background: #e89a3a; }
+    .dot-teal { background: #5b9a92; }
+    .dot-coral { background: #ec7d72; }
+
+    /* ---- Food ---- */
+    .food-split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .food-block {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 24px 28px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+    }
+    .food-block.dark {
+      background: var(--navy);
+      color: var(--cream);
+    }
+    .food-head {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--coral);
+      margin-bottom: 14px;
+    }
+    .food-block.dark .food-head { color: var(--orange); }
+    .food-head em { font-style: normal; opacity: 0.6; font-weight: 600; letter-spacing: 0.05em; text-transform: none; }
+    .food-list { list-style: none; padding: 0; font-size: 1rem; }
+    .food-list li {
+      padding: 9px 0;
+      border-bottom: 1px dashed rgba(29,58,95,0.15);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .food-block.dark .food-list li {
+      border-bottom-color: rgba(253,244,221,0.15);
+    }
+    .food-list li:last-child { border-bottom: none; }
+    .food-list .qty {
+      margin-left: auto;
+      font-family: 'Caveat', cursive;
+      font-size: 1.1rem;
+      color: var(--coral);
+    }
+
+    /* ---- Pregame card ---- */
+    .pregame-card {
+      background: var(--navy);
+      color: var(--cream);
+      border-radius: 24px;
+      padding: 36px 34px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 10px 0 rgba(29,58,95,0.15);
+    }
+    .pregame-badge {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy-deep);
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .pregame-time {
+      font-family: 'Caveat', cursive;
+      font-size: 1.4rem;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+    .pregame-copy {
+      font-size: 1.02rem;
+      line-height: 1.65;
+      opacity: 0.9;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* ---- Volunteer ---- */
+    .volunteer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      align-items: center;
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 28px 30px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+    }
+    .volunteer-copy p { margin-bottom: 10px; font-size: 1rem; }
+    .volunteer-copy p:last-child { margin-bottom: 0; font-size: 0.9rem; opacity: 0.75; }
+    .volunteer-copy a { color: var(--coral-deep); font-weight: 700; }
+    .volunteer-cta { text-align: center; }
+
+    /* ---- T-Shirts ---- */
+    .tshirt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 28px 30px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .tshirt-image {
+      background: #fff;
+      border-radius: 14px;
+      padding: 12px;
+      border: 1px solid rgba(29,58,95,0.08);
+    }
+    .tshirt-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .tshirt-copy p { margin-bottom: 10px; font-size: 1rem; }
+    .tshirt-copy p:last-of-type { margin-bottom: 16px; }
+    .tshirt-cta { text-align: left; }
+
+    /* ---- Cake ---- */
+    .cake-card {
+      background: var(--coral);
+      color: var(--cream);
+      border-radius: 24px;
+      padding: 32px 36px;
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+      box-shadow: 0 10px 0 var(--coral-deep);
+    }
+    .cake-icons { font-size: 2.6rem; margin-bottom: 12px; letter-spacing: 0.15em; }
+    .cake-card p { margin-bottom: 10px; font-size: 1rem; }
+    .cake-card p:last-child { margin-bottom: 0; font-size: 0.88rem; opacity: 0.85; }
+    .cake-card a { color: var(--cream); font-weight: 700; text-decoration: underline; }
+
+    /* ---- FAQ ---- */
+    .faq-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 4px 24px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(29,58,95,0.1);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: 0;
+      padding: 18px 40px 18px 0;
+      text-align: left;
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.02rem;
+      color: var(--navy);
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-q::after {
+      content: '+';
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--coral);
+      line-height: 1;
+    }
+    .faq-q[aria-expanded="true"]::after { content: '–'; }
+    .faq-a {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+    }
+    .faq-q[aria-expanded="true"] + .faq-a {
+      max-height: 500px;
+    }
+    .faq-a-inner {
+      padding: 0 40px 18px 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--ink);
+      opacity: 0.85;
+    }
+    .faq-a-inner a { color: var(--coral-deep); font-weight: 700; }
+
+    /* ---- Section footer note ---- */
+    .section-foot {
+      text-align: center;
+      margin-top: 28px;
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      color: var(--navy);
+      opacity: 0.7;
+    }
+    .section-foot a { color: var(--coral-deep); font-weight: 700; }
+
+    /* ---- Footer ---- */
+    .site-foot {
+      background: var(--navy);
+      color: var(--cream);
+      text-align: center;
+      padding: 44px 20px 36px;
+      margin-top: 60px;
+    }
+    .site-foot .foot-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .site-foot p { font-size: 0.95rem; margin-bottom: 4px; opacity: 0.85; }
+    .site-foot .foot-contact { margin-top: 8px; }
+    .site-foot a { color: var(--orange); font-weight: 700; text-decoration: none; }
+    .site-foot a:hover { text-decoration: underline; }
+    .site-foot .foot-small {
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      color: var(--orange);
+      margin-top: 16px;
+      opacity: 0.9;
+    }
+    .site-foot .foot-credit {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+
+    /* ---- 2026 archive divider ---- */
+    .year-divider {
+      max-width: 1100px;
+      margin: 64px auto 8px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .year-divider .yd-rule {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      justify-content: center;
+      color: var(--navy);
+    }
+    .year-divider .yd-rule::before,
+    .year-divider .yd-rule::after {
+      content: '';
+      height: 2px;
+      flex: 1;
+      max-width: 160px;
+      background: rgba(29,58,95,0.18);
+    }
+    .year-divider .yd-eyebrow {
+      font-family: 'Caveat', cursive;
+      font-size: 1.4rem;
+      color: var(--coral);
+    }
+    .year-divider .yd-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .year-divider .yd-sub {
+      font-family: 'Nunito', sans-serif;
+      color: var(--navy);
+      opacity: 0.75;
+      margin-top: 8px;
+      font-size: 1.02rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero { padding-top: 48px; }
+      .ribbon { padding: 12px 32px; }
+      .map-wrap { padding: 10px; border-radius: 20px; }
+      .price-grid { grid-template-columns: repeat(2, 1fr); }
+      .volunteer-grid { grid-template-columns: 1fr; text-align: center; }
+      .tshirt-grid { grid-template-columns: 1fr; text-align: center; }
+      .tshirt-cta { text-align: center; }
+      .activity-col { padding: 18px 20px; }
+      .faq-wrap { padding: 4px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#y2027">2027</a></li>
+    <li><a href="#recap-2026">2026 Recap</a></li>
+    <li><a href="#wristbands">Wristbands</a></li>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#tshirts">T-Shirts</a></li>
+    <li><a href="#inflatables">Inflatables</a></li>
+    <li><a href="#activities">Games</a></li>
+    <li><a href="#food">Food</a></li>
+    <li><a href="#volunteer">Volunteer</a></li>
+    <li><a href="#cake">Cake-a-Palooza</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- ================ 2027 SAVE THE DATE ================ -->
+<section class="hero" id="y2027">
+  <div class="sparkles" aria-hidden="true">
+    <span style="top:10%; left:7%; color:var(--coral); font-size:1.4rem;">✳</span>
+    <span style="top:16%; right:10%; color:var(--teal); font-size:1.1rem;">✳</span>
+    <span style="top:46%; left:4%; color:var(--orange); font-size:1rem;">✳</span>
+    <span style="top:54%; right:5%; color:var(--coral); font-size:1.3rem;">✳</span>
+    <span style="top:80%; left:12%; color:var(--teal); font-size:1rem;">✳</span>
+    <span style="top:86%; right:13%; color:var(--orange); font-size:1.05rem;">✳</span>
+  </div>
+
+  <div class="hero-eyebrow">save the date</div>
+  <h1 class="hero-title">2027</h1>
+  <div class="ribbon">Friday · May 21, 2027<span class="line2">Abernethy Elementary Carnival</span></div>
+
+  <div class="hero-tagline">
+    <span class="l1">Carnival is coming back!</span>
+    <span class="l2">And we need parents to lead it.</span>
+  </div>
+
+  <p class="hero-pregame" style="max-width:620px; margin-left:auto; margin-right:auto;">
+    Thank you for an incredible 2026 — it was a huge success. We expect Carnival to take place
+    on <strong>Friday, May 21, 2027</strong>, and we're looking for parent volunteers to help lead it.
+  </p>
+
+  <div class="hero-cta-row">
+    <a class="btn btn-primary" href="mailto:carnival@supportabernethy.org?subject=Volunteer%20to%20help%20lead%20Carnival%202027">Help Lead Carnival 2027</a>
+    <a class="btn btn-secondary" href="#recap-2026">See the 2026 Carnival</a>
+  </div>
+</section>
+
+<!-- ================ 2026 RECAP DIVIDER ================ -->
+<div class="year-divider" id="recap-2026">
+  <div class="yd-rule"><span class="yd-title">The 2026 Carnival</span></div>
+  <div class="yd-eyebrow">a look back</div>
+  <div class="yd-sub">Everything below is from our May 15, 2026 event — kept here for reference as we plan 2027. We'll reuse it all next year.</div>
+</div>
+
+<section class="hero">
+  <div class="sparkles" aria-hidden="true">
+    <span style="top:8%; left:6%; color:var(--coral); font-size:1.4rem;">✳</span>
+    <span style="top:14%; right:9%; color:var(--teal); font-size:1.1rem;">✳</span>
+    <span style="top:32%; left:3%; color:var(--orange); font-size:0.9rem;">✳</span>
+    <span style="top:40%; right:4%; color:var(--coral); font-size:1.3rem;">✳</span>
+    <span style="top:62%; left:8%; color:var(--navy); font-size:0.8rem;">✳</span>
+    <span style="top:70%; right:6%; color:var(--orange); font-size:1.2rem;">✳</span>
+    <span style="top:82%; left:14%; color:var(--teal); font-size:1rem;">✳</span>
+    <span style="top:88%; right:14%; color:var(--coral); font-size:0.95rem;">✳</span>
+  </div>
+
+  <img class="hero-banner" src="carnival-banner.png" alt="Abernethy Elementary School Carnival — Friday, May 15, 2026, 5:30–8:30 PM">
+
+
+  <div class="hero-pregame">
+    Pre-K to 2nd grade pregame <span class="sp">✳</span> 5:00 – 5:30 PM
+  </div>
+
+  <div class="hero-tagline">
+    <span class="l1">Fun for the whole family!</span>
+    <span class="l2">Games! Food! Prizes!</span>
+  </div>
+
+  <div class="hero-cta-row">
+    <a class="btn btn-primary" href="#wristbands">Get Wristbands</a>
+    <a class="btn btn-secondary" href="#map">See the Map</a>
+  </div>
+</section>
+
+<section class="chapter" id="map">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">everything all at once</div>
+    <h2 class="chapter-title">The whole carnival</h2>
+    <div class="chapter-sub">Six inflatables, a dozen games, food carts, cake, and more. Here's where to find it all.</div>
+  </div>
+
+  <div class="map-wrap">
+    <div class="map-stage">
+      <img class="map-img" src="carnival-map.jpg" alt="Map of the Abernethy carnival grounds — inflatables, games, food, and operations laid out across the school yard">
+      <!-- Operations / orientation -->
+      <a class="map-hot" href="#cake"        style="left:46%; top:7%;  width:20%; height:14%;" aria-label="Cake-a-Palooza"></a>
+      <a class="map-hot" href="#wristbands"  style="left:5%;  top:36%; width:16%; height:13%;" aria-label="Ticket sales"></a>
+      <a class="map-hot" href="#volunteer"   style="left:21%; top:48%; width:13%; height:11%;" aria-label="Volunteer check-in and medic"></a>
+
+      <!-- Food trucks -->
+      <a class="map-hot" href="#food"        style="left:67%; top:45%; width:16%; height:14%;" aria-label="ASH Woodfired Pizza"></a>
+      <a class="map-hot" href="#food"        style="left:83%; top:45%; width:16%; height:14%;" aria-label="Stoopid Burger"></a>
+      <a class="map-hot" href="#food"        style="left:83%; top:64%; width:14%; height:13%;" aria-label="Shaved Ice"></a>
+
+      <!-- Sweets included with wristband -->
+      <a class="map-hot" href="#food"        style="left:55%; top:80%; width:9%;  height:8%;"  aria-label="Cotton candy"></a>
+      <a class="map-hot" href="#food"        style="left:64%; top:80%; width:9%;  height:8%;"  aria-label="Donuts"></a>
+      <a class="map-hot" href="#food"        style="left:73%; top:80%; width:9%;  height:8%;"  aria-label="Popcorn"></a>
+
+      <!-- Inflatables (pink tiles on the covered blacktop) -->
+      <a class="map-hot" href="#inflatables" style="left:35%; top:64%; width:10%; height:13%;" aria-label="Wipe Out (Leaps and Bounds)"></a>
+      <a class="map-hot" href="#inflatables" style="left:45%; top:64%; width:10%; height:13%;" aria-label="Axe throwing"></a>
+      <a class="map-hot" href="#inflatables" style="left:55%; top:64%; width:10%; height:13%;" aria-label="Pony Belly Bounce"></a>
+      <a class="map-hot" href="#inflatables" style="left:65%; top:62%; width:12%; height:15%;" aria-label="Dual Lane Slide"></a>
+      <a class="map-hot" href="#inflatables" style="left:77%; top:62%; width:12%; height:15%;" aria-label="Green Dragon Bounce"></a>
+      <a class="map-hot" href="#inflatables" style="left:35%; top:78%; width:30%; height:6%;"  aria-label="100 foot Radical Run obstacle course"></a>
+
+      <!-- Games — outdoor (left brown area) -->
+      <a class="map-hot" href="#activities"  style="left:5%;  top:3%;  width:9%;  height:8%;"  aria-label="Limbo"></a>
+      <a class="map-hot" href="#activities"  style="left:14%; top:3%;  width:11%; height:8%;"  aria-label="Face painters"></a>
+      <a class="map-hot" href="#activities"  style="left:23%; top:11%; width:11%; height:8%;"  aria-label="Balloon darts"></a>
+      <a class="map-hot" href="#activities"  style="left:5%;  top:17%; width:11%; height:9%;"  aria-label="Balloon twisters"></a>
+      <a class="map-hot" href="#activities"  style="left:17%; top:19%; width:9%;  height:8%;"  aria-label="Dino dig"></a>
+      <a class="map-hot" href="#activities"  style="left:25%; top:25%; width:13%; height:9%;"  aria-label="Putt putt"></a>
+      <a class="map-hot" href="#activities"  style="left:36%; top:30%; width:11%; height:8%;"  aria-label="Tattoos"></a>
+
+      <!-- Games — indoor (cafeteria + gym) and the outdoor cluster -->
+      <a class="map-hot" href="#indoor-games" style="left:55%; top:33%; width:12%; height:9%;" aria-label="Games — cafeteria"></a>
+      <a class="map-hot" href="#indoor-games" style="left:69%; top:33%; width:12%; height:9%;" aria-label="Games — gym"></a>
+      <a class="map-hot" href="#activities"  style="left:54%; top:42%; width:9%;  height:8%;"  aria-label="Pick a duck"></a>
+      <a class="map-hot" href="#activities"  style="left:62%; top:42%; width:9%;  height:8%;"  aria-label="Bottle toss"></a>
+      <a class="map-hot" href="#activities"  style="left:42%; top:50%; width:11%; height:11%;" aria-label="Balloon twister and face painter"></a>
+      <a class="map-hot" href="#activities"  style="left:52%; top:50%; width:9%;  height:11%;" aria-label="Pop a shot"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================ WRISTBANDS ================ -->
+<section class="chapter" id="wristbands">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">all games included · one price</div>
+    <h2 class="chapter-title">Wristbands</h2>
+    <div class="chapter-sub">Only children need bracelets. Adults do not. Cash &amp; cards accepted day-of; gazebo purchases are cash only.</div>
+  </div>
+
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="price-amount">$25</div>
+      <div class="price-label">in advance</div>
+      <div class="price-note">online · Konstella</div>
+    </div>
+    <div class="price-card">
+      <div class="price-amount">$30</div>
+      <div class="price-label">at the event</div>
+      <div class="price-note">cash or card</div>
+    </div>
+    <div class="price-card">
+      <div class="price-amount">$10</div>
+      <div class="price-label">pre-elementary</div>
+      <div class="price-note">Pre-K through kindergarten</div>
+    </div>
+    <div class="price-card highlight">
+      <div class="price-amount">$5</div>
+      <div class="price-label">donate-a-bracelet</div>
+      <div class="price-note">help a family who needs one</div>
+    </div>
+  </div>
+
+  <div class="cta-center">
+    <a class="btn btn-primary big" href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade" target="_blank" rel="noopener">Buy Wristbands on Konstella →</a>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-eyebrow">What it covers</div>
+      <p>Unlimited games and activities all night long. Each wristband also includes <strong>one cotton candy, one popcorn, and one donut</strong>.</p>
+      <p class="info-small">Doesn't cover food trucks or Fairy Sparkle hair.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-eyebrow">Gazebo pickup schedule</div>
+      <ul class="clean-list">
+        <li><strong>May 12 – 14</strong> · 7:45 – 8:15 AM · 2:20 – 2:50 PM</li>
+        <li><strong>May 15</strong> · 7:45 – 8:15 AM · 2:30 – 7:00 PM</li>
+      </ul>
+      <p class="info-small">Gazebo sales are <strong>cash only</strong>. Online orders can be picked up during the same windows or at day-of will call.</p>
+    </div>
+    <div class="info-card soft">
+      <div class="info-eyebrow">Financial assistance</div>
+      <p>We want every child to enjoy Carnival regardless of ability to pay. Contact school counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================ T-SHIRTS ================ -->
+<section class="chapter" id="tshirts">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">show your school spirit</div>
+    <h2 class="chapter-title">Carnival T-Shirts</h2>
+    <div class="chapter-sub">Official Abernethy Elementary Carnival 2026 t-shirts. Wear it to the carnival, wear it all year.</div>
+  </div>
+
+  <div class="tshirt-grid">
+    <div class="tshirt-image">
+      <a href="https://bashors.chipply.com/abernethycarnival/" target="_blank" rel="noopener">
+        <img src="tshirt.jpg" alt="Abernethy Elementary School Carnival 2026 t-shirt with navy tree logo">
+      </a>
+    </div>
+    <div class="tshirt-copy">
+      <p>Available in multiple colors and sizes for kids and adults. Orders are placed online and shipped or delivered through Bashors.</p>
+      <div class="tshirt-cta">
+        <a class="btn btn-primary big" href="https://bashors.chipply.com/abernethycarnival/" target="_blank" rel="noopener">Order T-Shirts →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ INFLATABLES ================ -->
+<section class="chapter" id="inflatables">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">the best part</div>
+    <h2 class="chapter-title">Six big inflatables</h2>
+    <div class="chapter-sub">All on the covered blacktop. Included with every wristband.</div>
+  </div>
+
+  <div class="inflatable-grid">
+    <div class="inflatable-card" style="--card:#5ea4c4; --card-deep:#3b7a99;">
+      <div class="inflatable-viz"><img src="inflatables-web/radical-run.jpg" alt="100 foot Radical Run obstacle course" loading="lazy"></div>
+      <h3>100′ Radical Run</h3>
+      <p>Giant obstacle course with tunnels, pop-ups, walls and a slide at the end. The big one.</p>
+    </div>
+
+    <div class="inflatable-card" style="--card:#ec7d72; --card-deep:#c85a52;">
+      <div class="inflatable-viz"><img src="inflatables-web/xtreme-slide.jpg" alt="25 foot tall Xtreme dual-lane slide" loading="lazy"></div>
+      <h3>25′ Xtreme Slide</h3>
+      <p>Two-lane tall slide — race a friend to the bottom.</p>
+    </div>
+
+    <div class="inflatable-card" style="--card:#5b8a54; --card-deep:#3d6b38;">
+      <div class="inflatable-viz"><img src="inflatables-web/green-dragon.jpg" alt="Green Dragon bounce house" loading="lazy"></div>
+      <h3>Green Dragon Bounce</h3>
+      <p>Classic bounce house with a dragon peeking over the top.</p>
+    </div>
+
+    <div class="inflatable-card" style="--card:#b08360; --card-deep:#7a5a3f;">
+      <div class="inflatable-viz"><img src="inflatables-web/pony-belly.jpg" alt="Pony Belly bronco bounce" loading="lazy"></div>
+      <h3>Pony Belly Bounce</h3>
+      <p>Bounce underneath a big inflatable bronco — unusual and fun.</p>
+    </div>
+
+    <div class="inflatable-card" style="--card:#5ea4c4; --card-deep:#3b7a99;">
+      <div class="inflatable-viz"><img src="inflatables-web/leaps-bounds.jpg" alt="Leaps and Bounds ball hopping inflatable" loading="lazy"></div>
+      <h3>Leaps &amp; Bounds</h3>
+      <p>Hop across four huge red balls, Wipeout-style. Much harder than it looks.</p>
+    </div>
+
+    <div class="inflatable-card" style="--card:#8a6a4a; --card-deep:#5e4630;">
+      <div class="inflatable-viz"><img src="inflatables-web/axe-throwing.jpg" alt="Compact inflatable axe throwing game" loading="lazy"></div>
+      <h3>Axe Throwing</h3>
+      <p>Velcro-axes, inflatable target, safe for all ages. Surprisingly popular.</p>
+    </div>
+  </div>
+
+  <p class="section-foot">Plus a full-service cotton candy booth and the classic prize booth.</p>
+</section>
+
+<!-- ================ ACTIVITIES ================ -->
+<section class="chapter" id="activities">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">beyond the inflatables</div>
+    <h2 class="chapter-title">Games, art, and more</h2>
+    <div class="chapter-sub">All included with your wristband (except Fairy Sparkle hair).</div>
+  </div>
+
+  <div class="activity-grid">
+    <div class="activity-col">
+      <h4>Games</h4>
+      <ul class="activity-list">
+        <li><span class="dot dot-blue"></span>Dino Dig</li>
+        <li><span class="dot dot-blue"></span>Pick-a-Duck</li>
+        <li><span class="dot dot-blue"></span>Pop-A-Shot</li>
+        <li><span class="dot dot-blue"></span>Bottle Toss</li>
+        <li><span class="dot dot-blue"></span>Limbo</li>
+        <li><span class="dot dot-blue"></span>Darts</li>
+        <li><span class="dot dot-orange"></span>Golf</li>
+        <li><span class="dot dot-orange"></span>Tug of War</li>
+      </ul>
+    </div>
+
+    <div class="activity-col">
+      <h4>Artists &amp; fun</h4>
+      <ul class="activity-list">
+        <li><span class="dot dot-teal"></span>Face painting</li>
+        <li><span class="dot dot-teal"></span>Balloon artists</li>
+        <li><span class="dot dot-teal"></span>Tattoos (applied while you wait)</li>
+        <li><span class="dot dot-teal"></span>Photo booth</li>
+        <li><span class="dot dot-coral"></span>Fairy Sparkle hair <em class="extra">· extra cost</em></li>
+        <li><span class="dot dot-orange"></span>Musical cakes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================ INDOOR GAMES ================ -->
+<section class="chapter" id="indoor-games">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">cafeteria + gym</div>
+    <h2 class="chapter-title">Indoor games</h2>
+    <div class="chapter-sub">Step inside to try your luck at the nostalgia classics. Both rooms run all night.</div>
+  </div>
+
+  <div class="indoor-wrap">
+    <svg class="indoor-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of indoor games in the cafeteria and gym">
+      <defs>
+        <filter id="indoor-shadow" x="-10%" y="-10%" width="120%" height="130%">
+          <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1d3a5f" flood-opacity="0.18"/>
+        </filter>
+      </defs>
+
+      <!-- Room labels (above) -->
+      <text x="240" y="34" class="indoor-room-label">CAFETERIA</text>
+      <text x="760" y="34" class="indoor-room-label">GYM</text>
+
+      <!-- Cafeteria room -->
+      <rect x="40" y="55" width="400" height="440" rx="14" fill="#fffdf6" stroke="#1d3a5f" stroke-width="3"/>
+      <!-- Gym room -->
+      <rect x="560" y="55" width="400" height="440" rx="14" fill="#fffdf6" stroke="#1d3a5f" stroke-width="3"/>
+
+      <!-- Cafeteria tiles -->
+      <g filter="url(#indoor-shadow)">
+        <rect x="70" y="120" width="150" height="60" rx="8" fill="#ec7d72"/>
+        <rect x="70" y="260" width="150" height="60" rx="8" fill="#f4c842"/>
+        <rect x="280" y="170" width="140" height="60" rx="8" fill="#f4c842"/>
+        <rect x="280" y="320" width="140" height="90" rx="8" fill="#f4c842"/>
+      </g>
+      <text x="145" y="156" class="indoor-tile-text">Fairy Hair</text>
+      <text x="145" y="296" class="indoor-tile-text">Photobooth</text>
+      <text x="350" y="206" class="indoor-tile-text">Spin Art</text>
+      <text x="350" y="372" class="indoor-tile-text">Fish Pong</text>
+
+      <!-- Gym tiles -->
+      <g filter="url(#indoor-shadow)">
+        <rect x="590" y="110" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="180" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="265" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="350" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="780" y="110" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="780" y="200" width="160" height="90" rx="8" fill="#f4c842"/>
+        <rect x="780" y="350" width="160" height="55" rx="8" fill="#f4c842"/>
+      </g>
+      <text x="670" y="143" class="indoor-tile-text">Nosepicker</text>
+      <text x="670" y="213" class="indoor-tile-text">Bean Bag Toss</text>
+      <text x="670" y="298" class="indoor-tile-text">Fishing 2</text>
+      <text x="670" y="383" class="indoor-tile-text">Fishing 1</text>
+      <text x="860" y="143" class="indoor-tile-text">Plinko</text>
+      <text x="860" y="240" class="indoor-tile-text">Wheel of</text>
+      <text x="860" y="262" class="indoor-tile-text">Fortune</text>
+      <text x="860" y="383" class="indoor-tile-text">Fortune Teller</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ================ FOOD ================ -->
+<section class="chapter" id="food">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">grab dinner, find a seat</div>
+    <h2 class="chapter-title">Food &amp; treats</h2>
+    <div class="chapter-sub">Tables and grassy lounging nearby — bring a blanket if you like.</div>
+  </div>
+
+  <div class="food-split">
+    <div class="food-block">
+      <div class="food-head">Included with your wristband</div>
+      <ul class="food-list">
+        <li>🍭 Cotton candy <span class="qty">×1</span></li>
+        <li>🍿 Popcorn <span class="qty">×1</span></li>
+        <li>🍩 Donut <span class="qty">×1</span></li>
+      </ul>
+    </div>
+    <div class="food-block dark">
+      <div class="food-head">2026 food trucks <em>· pay at the truck</em></div>
+      <ul class="food-list">
+        <li>🍔 <strong>Stoopid Burger</strong> — burgers</li>
+        <li>🍕 <strong>ASH Woodfired Pizza</strong> — slices &amp; salads</li>
+        <li>🍧 <strong>Brain Freeze Shaved Ice</strong> — returning from last year</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================ PREGAME ================ -->
+<section class="chapter" id="pregame">
+  <div class="pregame-card">
+    <div class="pregame-badge">3rd annual</div>
+    <h2 class="chapter-title" style="color:var(--cream); margin-bottom:6px;">Pre-K to 2nd grade pregame</h2>
+    <p class="pregame-time">5:00 – 5:30 PM · before the bell</p>
+    <p class="pregame-copy">
+      A half-hour head start for the littler kiddos. A few inflatables and games will be open,
+      plus Cake-a-Palooza in the auditorium — so young ones can check out Carnival before the
+      bigger, more seasoned crowd arrives at 5:30.
+    </p>
+  </div>
+</section>
+
+<!-- ================ VOLUNTEER ================ -->
+<section class="chapter" id="volunteer">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">powered by parents</div>
+    <h2 class="chapter-title">Volunteer</h2>
+    <div class="chapter-sub">Carnival only works because of community participation. Two hours of your time goes a long way.</div>
+  </div>
+
+  <div class="volunteer-grid">
+    <div class="volunteer-copy">
+      <p>Shifts include helping with setup, running a carnival game, bagging cotton candy, selling wristbands at the gazebo, or breaking things down at the end. Adults don't need a wristband — you're supervising the fun.</p>
+      <p>Questions? <a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a></p>
+    </div>
+    <div class="volunteer-cta">
+      <a class="btn btn-secondary big" href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade" target="_blank" rel="noopener">Sign up on Konstella →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================ CAKE-A-PALOOZA ================ -->
+<section class="chapter" id="cake">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">very popular</div>
+    <h2 class="chapter-title">Cake-a-Palooza</h2>
+    <div class="chapter-sub">Musical cakes is a Carnival tradition. We need your donations to make it happen.</div>
+  </div>
+
+  <div class="cake-card">
+    <div class="cake-icons">🍰 🍩 🧁 🎂</div>
+    <p>Donate a <strong>store-bought</strong> cake or baked good. Drop off in the auditorium the day of the event. (Store-bought only, please — PPS allergen rules.)</p>
+    <p class="info-small">Questions? <a href="mailto:cake@supportabernethy.org">cake@supportabernethy.org</a></p>
+  </div>
+</section>
+
+<!-- ================ FAQ ================ -->
+<section class="chapter" id="faq">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">the fine print</div>
+    <h2 class="chapter-title">Questions &amp; answers</h2>
+  </div>
+
+  <div class="faq-wrap">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What is Carnival?</button>
+      <div class="faq-a"><div class="faq-a-inner">A beloved school tradition and huge community celebration. Kicks off at 5:30 PM and ends at 8:30 PM. Expect traditional carnival games and prizes, inflatable obstacle courses, musical cakes, face-painting, balloon animals, tattoos, and a photo booth. Food trucks on-site — tables nearby, or bring a picnic blanket for the grassy area. A flat fee buys each kid a wristband and they can move freely between games all night.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What's the pregame from 5:00 – 5:30 PM?</button>
+      <div class="faq-a"><div class="faq-a-inner">Our 3rd annual Carnival pregame — for kiddos in 2nd grade and younger only. Games and a few inflatables will be open, plus Cake-a-Palooza in the auditorium. It gives the younger kids a chance to check out Carnival before the older crowd arrives.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Do adults need a wristband?</button>
+      <div class="faq-a"><div class="faq-a-inner">No. Adults do not need to purchase a wristband. We need you to supervise the games as a volunteer! <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Sign up on Konstella</a>.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How do I buy and pick up a wristband?</button>
+      <div class="faq-a"><div class="faq-a-inner">Buy online with a credit card via <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Konstella</a>, or at the school gazebo using <strong>cash only</strong>. Gazebo schedule: before school May 12–15 (7:45–8:15 AM), after school May 12–14 (2:20–2:50 PM), and May 15 day-of 2:30–7:00 PM. Online purchases can be picked up at the gazebo during the same windows or at day-of will call.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What if I need financial assistance?</button>
+      <div class="faq-a"><div class="faq-a-inner">We want every child to enjoy Carnival regardless of ability to pay. Please contact school counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a>.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Does the wristband cover food?</button>
+      <div class="faq-a"><div class="faq-a-inner">In addition to unlimited games and activities, each wristband includes one cotton candy, one popcorn, and one donut. Wristbands <strong>do not</strong> cover food purchased from third-party vendors (pizza, burgers, shaved ice, etc.) or Fairy Sparkle hair services.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What food will be available?</button>
+      <div class="faq-a"><div class="faq-a-inner">A new 2026 food-truck lineup: <strong>Stoopid Burger</strong> (burgers), <strong>ASH Woodfired Pizza</strong> (slices and salads), and the returning <strong>Brain Freeze Shaved Ice</strong>.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Where can I buy a 2026 Carnival tee?</button>
+      <div class="faq-a"><div class="faq-a-inner">A commemorative shirt is available each year — the online store will be open May 1–17, 2026. Shirts are delivered to your kid's backpack during the last week of school. <em>(Link coming soon.)</em></div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Where do Carnival proceeds go?</button>
+      <div class="faq-a"><div class="faq-a-inner">Carnival's primary function is to bring our community together — it is not a traditional fundraiser. The committee prices wristbands to cover event expenses. Any additional proceeds go directly to the PTA general fund to enhance school programs.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How can I help make Carnival a success?</button>
+      <div class="faq-a"><div class="faq-a-inner">Carnival relies on parents and community participation. Consider <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">volunteering</a> to set up, run a game, bag cotton candy, or sell wristbands. Or donate a store-bought cake or baked good for Cake-a-Palooza — drop-off in the auditorium day-of. Questions: <a href="mailto:cake@supportabernethy.org">cake@supportabernethy.org</a>.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Where is the carnival?</button>
+      <div class="faq-a"><div class="faq-a-inner">Abernethy Elementary School — 2421 SE Orange Ave, Portland, OR 97214. On the school grounds and inside the cafeteria and gym.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What if it rains?</button>
+      <div class="faq-a"><div class="faq-a-inner">Rain or shine — this is Portland! Many activities will have cover, including the inflatables on the covered blacktop.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Where do I park?</button>
+      <div class="faq-a"><div class="faq-a-inner">Street parking around the school. Walk, bike, or carpool encouraged.</div></div>
+    </div>
+  </div>
+
+  <p class="section-foot">For general questions, email the Carnival Committee — Liz Dome, Mandy Brigham, Stacey Milton, Beth Mikkleson, Destinee Alexander, Nick Dome &amp; Mercedes Callahan — at <a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a>.</p>
+</section>
+
+<!-- ================ FOOTER ================ -->
+<footer class="site-foot">
+  <p class="foot-title">Abernethy Elementary Carnival</p>
+  <p>Friday, May 15, 2026 · 5:30 – 8:30 PM</p>
+  <p>Abernethy Elementary School · 2421 SE Orange Ave, Portland, OR 97214</p>
+  <p class="foot-contact"><a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a></p>
+  <p class="foot-small">See you next year — Carnival returns Friday, May 21, 2027. Want to help lead it? <a href="mailto:carnival@supportabernethy.org?subject=Volunteer%20to%20help%20lead%20Carnival%202027">Email us</a>.</p>
+  <p class="foot-credit">© 2026 Abernethy PTA</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', (!expanded).toString());
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -21,7 +21,7 @@ The PTA runs on volunteer time and community generosity. Both are welcome in any
 
 Your dollars fund community events, classroom and arts support, the [Eagle Reading Club and Mini Grants](/programs/), grounds and garden care, teacher appreciation, and help for families in need. The **[Annual Appeal](https://abernethyelementaryschool.betterworld.org/campaigns/abernethy-pta-direct-donations-2)** — our biggest direct-giving drive — kicks off **Monday, November 2, 2026**: give online, or send cash/check (payable to **Abernethy PTA**, with your student's name and grade) to the office at 2421 SE Orange Ave.
 
-The **[Abernethy Century Campaign](https://give.supportabernethy.org)** is raising $50K to fund the centennial mural and the next century — check it out.
+The **[Abernethy Century Campaign](/give/)** is raising $50K to fund the centennial mural and the next century — check it out.
 
 ## More ways to give
 

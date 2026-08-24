@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Artful Affair — Flier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --fg: #1A1A1A;
+    --neon-pink: #E0207A;
+    --neon-blue: #0098CC;
+    --neon-green: #6B8F00;
+    --neon-orange: #E04A2A;
+    --neon-violet: #8A30C4;
+    --muted: #666;
+    --faint: #BBB;
+    --border: #DDD;
+  }
+
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 8.5in;
+    height: 11in;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Space Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== PAINT BLOBS ===== */
+  .paint {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .p1 {
+    width: 60%;
+    height: 200px;
+    background: var(--neon-pink);
+    opacity: 0.5;
+    border-radius: 82% 18% 76% 24% / 54% 46% 62% 38%;
+    top: 10%;
+    left: -6%;
+    transform: rotate(-8deg);
+    filter: blur(6px);
+  }
+  .p2 {
+    width: 45%;
+    height: 220px;
+    background: var(--neon-blue);
+    opacity: 0.4;
+    border-radius: 24% 76% 35% 65% / 62% 38% 68% 32%;
+    top: 3%;
+    right: -10%;
+    transform: rotate(14deg);
+    filter: blur(8px);
+  }
+  .p3 {
+    width: 200px;
+    height: 180px;
+    background: var(--neon-green);
+    opacity: 0.3;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    bottom: 22%;
+    left: -2%;
+    transform: rotate(-18deg);
+    filter: blur(6px);
+  }
+  .p4 {
+    width: 30%;
+    height: 140px;
+    background: var(--neon-violet);
+    opacity: 0.35;
+    border-radius: 70% 30% 60% 40% / 45% 55% 50% 50%;
+    top: 44%;
+    right: 0%;
+    transform: rotate(6deg);
+    filter: blur(6px);
+  }
+  .p5 {
+    width: 55%;
+    height: 100px;
+    background: var(--neon-orange);
+    opacity: 0.3;
+    border-radius: 85% 15% 80% 20% / 55% 45% 60% 40%;
+    bottom: 8%;
+    left: 22%;
+    transform: rotate(3deg);
+    filter: blur(6px);
+  }
+  /* Drip */
+  .drip1 {
+    width: 16px;
+    height: 130px;
+    background: var(--neon-pink);
+    opacity: 0.5;
+    border-radius: 40% 60% 55% 45% / 10% 10% 90% 90%;
+    top: 28%;
+    left: 18%;
+    filter: blur(1px);
+  }
+  .drip2 {
+    width: 11px;
+    height: 90px;
+    background: var(--neon-blue);
+    opacity: 0.4;
+    border-radius: 50% 50% 55% 45% / 10% 10% 90% 90%;
+    top: 14%;
+    right: 12%;
+    transform: rotate(4deg);
+    filter: blur(1px);
+  }
+  /* Dots */
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* grain removed for print */
+
+  /* ===== CONTENT ===== */
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0.4in 0.55in 0.3in;
+  }
+
+  /* Header label */
+  .presents {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.12in;
+  }
+
+  /* Title lockup */
+  .title {
+    text-align: center;
+    margin-bottom: 0.08in;
+  }
+  .title .line-an {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 0.85;
+    letter-spacing: 0.04em;
+    color: var(--fg);
+  }
+  .title .line-artful {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 132px;
+    line-height: 0.82;
+    letter-spacing: 0.02em;
+    -webkit-text-stroke: 2.5px var(--neon-pink);
+    color: transparent;
+  }
+  .title .line-affair {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 68px;
+    line-height: 1.05;
+    color: var(--fg);
+    position: relative;
+    display: inline-block;
+    padding: 0 0.3in;
+  }
+  .title .line-affair::before {
+    content: '';
+    position: absolute;
+    width: 115%;
+    height: 55%;
+    background: var(--neon-pink);
+    opacity: 0.35;
+    border-radius: 82% 18% 76% 24% / 50% 50% 55% 45%;
+    top: 25%;
+    left: -8%;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+
+  /* Tagline */
+  .tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--neon-green);
+    margin-bottom: 0.15in;
+  }
+
+  /* Divider line */
+  .sep {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-blue), transparent);
+    opacity: 0.5;
+    margin-bottom: 0.12in;
+  }
+
+  /* QR code — primary CTA */
+  .qr-cta {
+    text-align: center;
+    margin-bottom: 0.12in;
+  }
+  #qrcode {
+    width: 1.5in;
+    height: 1.5in;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  #qrcode svg {
+    width: 100%;
+    height: 100%;
+  }
+  /* Paint-splash frame around QR */
+  .qr-frame {
+    position: relative;
+    display: inline-block;
+  }
+  .qr-frame::before,
+  .qr-frame::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .qr-frame::before {
+    width: 115%;
+    height: 115%;
+    top: -7.5%;
+    left: -7.5%;
+    background: linear-gradient(135deg, var(--neon-pink) 0%, var(--neon-violet) 40%, var(--neon-blue) 100%);
+    opacity: 0.15;
+    border-radius: 62% 38% 46% 54% / 58% 42% 64% 36%;
+    filter: blur(4px);
+    transform: rotate(-3deg);
+  }
+  .qr-frame::after {
+    width: 110%;
+    height: 112%;
+    top: -6%;
+    left: -5%;
+    background: linear-gradient(225deg, var(--neon-orange) 0%, var(--neon-green) 60%, var(--neon-blue) 100%);
+    opacity: 0.12;
+    border-radius: 44% 56% 68% 32% / 50% 60% 40% 50%;
+    filter: blur(3px);
+    transform: rotate(2deg);
+  }
+  .qr-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-orange);
+    margin-bottom: 4px;
+  }
+  .qr-url {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: 0.02em;
+  }
+
+  /* Details grid */
+  .details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    width: 100%;
+    margin-bottom: 0.12in;
+  }
+  .detail {
+    padding: 0.12in 0.12in;
+    text-align: center;
+    border-left: 2px solid transparent;
+  }
+  .detail:nth-child(1) { border-left: none; }
+  .detail:nth-child(1) .lbl { color: var(--neon-pink); }
+  .detail:nth-child(1) { border-left-color: transparent; }
+  .detail:nth-child(2) .lbl { color: var(--neon-blue); }
+  .detail:nth-child(2) { border-left-color: var(--neon-blue); }
+  .detail:nth-child(3) .lbl { color: var(--neon-violet); }
+  .detail:nth-child(3) { border-left-color: var(--neon-violet); }
+  .detail:nth-child(4) .lbl { color: var(--neon-orange); }
+  .detail:nth-child(4) { border-left-color: var(--neon-orange); }
+  .detail .lbl {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .detail .val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    line-height: 1.25;
+    color: var(--fg);
+  }
+  .detail .sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* Expect section */
+  .expect {
+    text-align: center;
+    margin-bottom: 0.1in;
+  }
+  .expect-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--neon-orange);
+    margin-bottom: 8px;
+  }
+  .expect-items {
+    display: flex;
+    justify-content: center;
+    gap: 0.1in;
+    flex-wrap: nowrap;
+  }
+  .expect-item {
+    padding: 8px 14px;
+    border: 2px solid var(--border);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+  .expect-item:nth-child(1) { border-color: var(--neon-pink); color: var(--neon-pink); }
+  .expect-item:nth-child(2) { border-color: var(--neon-blue); color: var(--neon-blue); }
+  .expect-item:nth-child(3) { border-color: var(--neon-green); color: var(--neon-green); }
+  .expect-item:nth-child(4) { border-color: var(--neon-violet); color: var(--neon-violet); }
+
+  /* Donations callout */
+  .donations {
+    text-align: center;
+    background: var(--neon-pink);
+    color: var(--bg);
+    padding: 0.1in 0.3in;
+    width: 100%;
+    margin-bottom: 0.1in;
+  }
+  .donations-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .donations-sub {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+  }
+
+  /* Ticket — compact */
+  .ticket {
+    text-align: center;
+    margin-bottom: 0.08in;
+    padding: 0.08in 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+  }
+  .ticket-line {
+    font-size: 14px;
+    color: var(--fg);
+    letter-spacing: 0.05em;
+  }
+  .ticket-line .price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--neon-pink);
+    vertical-align: middle;
+  }
+  .ticket-line .badge {
+    display: inline-block;
+    background: var(--neon-green);
+    color: var(--bg);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 2px 8px;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  .ticket-promo {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .ticket-promo code {
+    background: rgba(107, 143, 0, 0.1);
+    color: var(--neon-green);
+    padding: 1px 5px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+  }
+
+  /* Bottom contact */
+  .bottom-contact {
+    text-align: center;
+    margin-top: auto;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .bottom-contact strong {
+    color: var(--fg);
+    font-weight: 700;
+  }
+
+  /* Print overrides */
+  @media print {
+    html, body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <!-- Paint blobs -->
+  <div class="paint p1"></div>
+  <div class="paint p2"></div>
+  <div class="paint p3"></div>
+  <div class="paint p4"></div>
+  <div class="paint p5"></div>
+  <div class="paint drip1"></div>
+  <div class="paint drip2"></div>
+
+  <!-- Dots -->
+  <div class="dot" style="width:10px;height:10px;background:var(--neon-pink);top:8%;right:22%;opacity:0.5;"></div>
+  <div class="dot" style="width:7px;height:7px;background:var(--neon-blue);top:52%;right:8%;opacity:0.4;"></div>
+  <div class="dot" style="width:6px;height:6px;background:var(--neon-green);top:38%;left:6%;opacity:0.4;"></div>
+  <div class="dot" style="width:9px;height:9px;background:var(--neon-orange);bottom:18%;left:10%;opacity:0.4;"></div>
+  <div class="dot" style="width:5px;height:5px;background:var(--neon-violet);bottom:35%;right:15%;opacity:0.35;"></div>
+
+  <div class="content">
+    <!-- Header -->
+    <p class="presents">Abernethy Elementary Presents</p>
+
+    <!-- Title -->
+    <div class="title">
+      <div class="line-an">AN</div>
+      <div class="line-artful">ARTFUL</div>
+      <div class="line-affair">Affair</div>
+    </div>
+
+    <!-- Tagline -->
+    <p class="tagline">The Biggest Party of the Year</p>
+
+    <!-- QR Code — primary CTA -->
+    <div class="qr-cta">
+      <div class="qr-frame">
+        <div id="qrcode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><rect x="0" y="0" width="150" height="150" fill="#FFFFFF"/><rect x="1" y="1" width="28" height="28" rx="3.2" fill="#E0207A"/><rect x="5" y="5" width="20" height="20" rx="2.4" fill="#FFFFFF"/><rect x="9" y="9" width="12" height="12" rx="2" fill="#E0207A"/><rect x="121" y="1" width="28" height="28" rx="3.2" fill="#0098CC"/><rect x="125" y="5" width="20" height="20" rx="2.4" fill="#FFFFFF"/><rect x="129" y="9" width="12" height="12" rx="2" fill="#0098CC"/><rect x="1" y="121" width="28" height="28" rx="3.2" fill="#8A30C4"/><rect x="5" y="125" width="20" height="20" rx="2.4" fill="#FFFFFF"/><rect x="9" y="129" width="12" height="12" rx="2" fill="#8A30C4"/><circle cx="47" cy="3" r="1.52" fill="#E0207A"/><circle cx="55" cy="3" r="1.52" fill="#0098CC"/><circle cx="59" cy="3" r="1.52" fill="#0098CC"/><circle cx="63" cy="3" r="1.52" fill="#0098CC"/><circle cx="79" cy="3" r="1.52" fill="#0098CC"/><circle cx="87" cy="3" r="1.52" fill="#0098CC"/><circle cx="91" cy="3" r="1.52" fill="#0098CC"/><circle cx="99" cy="3" r="1.52" fill="#0098CC"/><circle cx="107" cy="3" r="1.52" fill="#0098CC"/><circle cx="115" cy="3" r="1.52" fill="#0098CC"/><circle cx="39" cy="7" r="1.52" fill="#E0207A"/><circle cx="55" cy="7" r="1.52" fill="#0098CC"/><circle cx="91" cy="7" r="1.52" fill="#0098CC"/><circle cx="95" cy="7" r="1.52" fill="#0098CC"/><circle cx="99" cy="7" r="1.52" fill="#0098CC"/><circle cx="115" cy="7" r="1.52" fill="#0098CC"/><circle cx="43" cy="11" r="1.52" fill="#E0207A"/><circle cx="59" cy="11" r="1.52" fill="#0098CC"/><circle cx="67" cy="11" r="1.52" fill="#0098CC"/><circle cx="79" cy="11" r="1.52" fill="#0098CC"/><circle cx="87" cy="11" r="1.52" fill="#0098CC"/><circle cx="99" cy="11" r="1.52" fill="#0098CC"/><circle cx="103" cy="11" r="1.52" fill="#0098CC"/><circle cx="107" cy="11" r="1.52" fill="#0098CC"/><circle cx="39" cy="15" r="1.52" fill="#E0207A"/><circle cx="51" cy="15" r="1.52" fill="#E0207A"/><circle cx="63" cy="15" r="1.52" fill="#0098CC"/><circle cx="83" cy="15" r="1.52" fill="#0098CC"/><circle cx="103" cy="15" r="1.52" fill="#0098CC"/><circle cx="107" cy="15" r="1.52" fill="#0098CC"/><circle cx="111" cy="15" r="1.52" fill="#0098CC"/><circle cx="35" cy="19" r="1.52" fill="#E0207A"/><circle cx="47" cy="19" r="1.52" fill="#E0207A"/><circle cx="55" cy="19" r="1.52" fill="#E0207A"/><circle cx="59" cy="19" r="1.52" fill="#0098CC"/><circle cx="67" cy="19" r="1.52" fill="#0098CC"/><circle cx="79" cy="19" r="1.52" fill="#0098CC"/><circle cx="87" cy="19" r="1.52" fill="#0098CC"/><circle cx="95" cy="19" r="1.52" fill="#0098CC"/><circle cx="103" cy="19" r="1.52" fill="#0098CC"/><circle cx="111" cy="19" r="1.52" fill="#0098CC"/><circle cx="39" cy="23" r="1.52" fill="#E0207A"/><circle cx="43" cy="23" r="1.52" fill="#E0207A"/><circle cx="47" cy="23" r="1.52" fill="#E0207A"/><circle cx="51" cy="23" r="1.52" fill="#E0207A"/><circle cx="59" cy="23" r="1.52" fill="#E0207A"/><circle cx="71" cy="23" r="1.52" fill="#0098CC"/><circle cx="75" cy="23" r="1.52" fill="#0098CC"/><circle cx="79" cy="23" r="1.52" fill="#0098CC"/><circle cx="87" cy="23" r="1.52" fill="#0098CC"/><circle cx="91" cy="23" r="1.52" fill="#0098CC"/><circle cx="107" cy="23" r="1.52" fill="#0098CC"/><circle cx="35" cy="27" r="1.52" fill="#E0207A"/><circle cx="43" cy="27" r="1.52" fill="#E0207A"/><circle cx="51" cy="27" r="1.52" fill="#E0207A"/><circle cx="59" cy="27" r="1.52" fill="#E0207A"/><circle cx="67" cy="27" r="1.52" fill="#0098CC"/><circle cx="75" cy="27" r="1.52" fill="#0098CC"/><circle cx="83" cy="27" r="1.52" fill="#0098CC"/><circle cx="91" cy="27" r="1.52" fill="#0098CC"/><circle cx="99" cy="27" r="1.52" fill="#0098CC"/><circle cx="107" cy="27" r="1.52" fill="#0098CC"/><circle cx="115" cy="27" r="1.52" fill="#0098CC"/><circle cx="35" cy="31" r="1.52" fill="#E0207A"/><circle cx="47" cy="31" r="1.52" fill="#E0207A"/><circle cx="59" cy="31" r="1.52" fill="#E0207A"/><circle cx="63" cy="31" r="1.52" fill="#0098CC"/><circle cx="71" cy="31" r="1.52" fill="#0098CC"/><circle cx="75" cy="31" r="1.52" fill="#0098CC"/><circle cx="79" cy="31" r="1.52" fill="#0098CC"/><circle cx="83" cy="31" r="1.52" fill="#0098CC"/><circle cx="91" cy="31" r="1.52" fill="#0098CC"/><circle cx="103" cy="31" r="1.52" fill="#0098CC"/><circle cx="107" cy="31" r="1.52" fill="#0098CC"/><circle cx="111" cy="31" r="1.52" fill="#0098CC"/><circle cx="115" cy="31" r="1.52" fill="#0098CC"/><circle cx="11" cy="35" r="1.52" fill="#E0207A"/><circle cx="15" cy="35" r="1.52" fill="#E0207A"/><circle cx="27" cy="35" r="1.52" fill="#E0207A"/><circle cx="31" cy="35" r="1.52" fill="#E0207A"/><circle cx="35" cy="35" r="1.52" fill="#E0207A"/><circle cx="47" cy="35" r="1.52" fill="#E0207A"/><circle cx="51" cy="35" r="1.52" fill="#E0207A"/><circle cx="67" cy="35" r="1.52" fill="#0098CC"/><circle cx="71" cy="35" r="1.52" fill="#0098CC"/><circle cx="75" cy="35" r="1.52" fill="#0098CC"/><circle cx="79" cy="35" r="1.52" fill="#0098CC"/><circle cx="91" cy="35" r="1.52" fill="#0098CC"/><circle cx="95" cy="35" r="1.52" fill="#0098CC"/><circle cx="103" cy="35" r="1.52" fill="#0098CC"/><circle cx="107" cy="35" r="1.52" fill="#0098CC"/><circle cx="111" cy="35" r="1.52" fill="#0098CC"/><circle cx="119" cy="35" r="1.52" fill="#0098CC"/><circle cx="123" cy="35" r="1.52" fill="#0098CC"/><circle cx="131" cy="35" r="1.52" fill="#0098CC"/><circle cx="3" cy="39" r="1.52" fill="#E0207A"/><circle cx="11" cy="39" r="1.52" fill="#E0207A"/><circle cx="15" cy="39" r="1.52" fill="#E0207A"/><circle cx="23" cy="39" r="1.52" fill="#E0207A"/><circle cx="31" cy="39" r="1.52" fill="#E0207A"/><circle cx="35" cy="39" r="1.52" fill="#E0207A"/><circle cx="51" cy="39" r="1.52" fill="#E0207A"/><circle cx="55" cy="39" r="1.52" fill="#E0207A"/><circle cx="59" cy="39" r="1.52" fill="#E0207A"/><circle cx="67" cy="39" r="1.52" fill="#0098CC"/><circle cx="71" cy="39" r="1.52" fill="#0098CC"/><circle cx="75" cy="39" r="1.52" fill="#0098CC"/><circle cx="79" cy="39" r="1.52" fill="#0098CC"/><circle cx="83" cy="39" r="1.52" fill="#0098CC"/><circle cx="87" cy="39" r="1.52" fill="#0098CC"/><circle cx="91" cy="39" r="1.52" fill="#0098CC"/><circle cx="103" cy="39" r="1.52" fill="#0098CC"/><circle cx="111" cy="39" r="1.52" fill="#0098CC"/><circle cx="123" cy="39" r="1.52" fill="#0098CC"/><circle cx="127" cy="39" r="1.52" fill="#0098CC"/><circle cx="131" cy="39" r="1.52" fill="#8A30C4"/><circle cx="139" cy="39" r="1.52" fill="#8A30C4"/><circle cx="143" cy="39" r="1.52" fill="#8A30C4"/><circle cx="3" cy="43" r="1.52" fill="#E0207A"/><circle cx="7" cy="43" r="1.52" fill="#E0207A"/><circle cx="11" cy="43" r="1.52" fill="#E0207A"/><circle cx="23" cy="43" r="1.52" fill="#E0207A"/><circle cx="27" cy="43" r="1.52" fill="#E0207A"/><circle cx="43" cy="43" r="1.52" fill="#E0207A"/><circle cx="47" cy="43" r="1.52" fill="#E0207A"/><circle cx="51" cy="43" r="1.52" fill="#E0207A"/><circle cx="71" cy="43" r="1.52" fill="#0098CC"/><circle cx="79" cy="43" r="1.52" fill="#0098CC"/><circle cx="87" cy="43" r="1.52" fill="#0098CC"/><circle cx="103" cy="43" r="1.52" fill="#0098CC"/><circle cx="115" cy="43" r="1.52" fill="#0098CC"/><circle cx="119" cy="43" r="1.52" fill="#0098CC"/><circle cx="135" cy="43" r="1.52" fill="#8A30C4"/><circle cx="139" cy="43" r="1.52" fill="#8A30C4"/><circle cx="3" cy="47" r="1.52" fill="#E0207A"/><circle cx="15" cy="47" r="1.52" fill="#E0207A"/><circle cx="23" cy="47" r="1.52" fill="#E0207A"/><circle cx="31" cy="47" r="1.52" fill="#E0207A"/><circle cx="39" cy="47" r="1.52" fill="#E0207A"/><circle cx="43" cy="47" r="1.52" fill="#E0207A"/><circle cx="63" cy="47" r="1.52" fill="#E0207A"/><circle cx="67" cy="47" r="1.52" fill="#E0207A"/><circle cx="71" cy="47" r="1.52" fill="#0098CC"/><circle cx="75" cy="47" r="1.52" fill="#0098CC"/><circle cx="99" cy="47" r="1.52" fill="#0098CC"/><circle cx="103" cy="47" r="1.52" fill="#0098CC"/><circle cx="107" cy="47" r="1.52" fill="#0098CC"/><circle cx="115" cy="47" r="1.52" fill="#0098CC"/><circle cx="131" cy="47" r="1.52" fill="#8A30C4"/><circle cx="135" cy="47" r="1.52" fill="#8A30C4"/><circle cx="139" cy="47" r="1.52" fill="#8A30C4"/><circle cx="147" cy="47" r="1.52" fill="#8A30C4"/><circle cx="23" cy="51" r="1.52" fill="#E0207A"/><circle cx="27" cy="51" r="1.52" fill="#E0207A"/><circle cx="39" cy="51" r="1.52" fill="#E0207A"/><circle cx="47" cy="51" r="1.52" fill="#E0207A"/><circle cx="51" cy="51" r="1.52" fill="#E0207A"/><circle cx="55" cy="51" r="1.52" fill="#E0207A"/><circle cx="59" cy="51" r="1.52" fill="#E0207A"/><circle cx="63" cy="51" r="1.52" fill="#E0207A"/><circle cx="67" cy="51" r="1.52" fill="#E0207A"/><circle cx="71" cy="51" r="1.52" fill="#0098CC"/><circle cx="83" cy="51" r="1.52" fill="#0098CC"/><circle cx="87" cy="51" r="1.52" fill="#0098CC"/><circle cx="95" cy="51" r="1.52" fill="#0098CC"/><circle cx="99" cy="51" r="1.52" fill="#0098CC"/><circle cx="103" cy="51" r="1.52" fill="#0098CC"/><circle cx="107" cy="51" r="1.52" fill="#0098CC"/><circle cx="111" cy="51" r="1.52" fill="#0098CC"/><circle cx="119" cy="51" r="1.52" fill="#8A30C4"/><circle cx="123" cy="51" r="1.52" fill="#8A30C4"/><circle cx="131" cy="51" r="1.52" fill="#8A30C4"/><circle cx="139" cy="51" r="1.52" fill="#8A30C4"/><circle cx="147" cy="51" r="1.52" fill="#8A30C4"/><circle cx="15" cy="55" r="1.52" fill="#E0207A"/><circle cx="23" cy="55" r="1.52" fill="#E0207A"/><circle cx="35" cy="55" r="1.52" fill="#E0207A"/><circle cx="39" cy="55" r="1.52" fill="#E0207A"/><circle cx="47" cy="55" r="1.52" fill="#E0207A"/><circle cx="71" cy="55" r="1.52" fill="#0098CC"/><circle cx="75" cy="55" r="1.52" fill="#0098CC"/><circle cx="83" cy="55" r="1.52" fill="#0098CC"/><circle cx="91" cy="55" r="1.52" fill="#0098CC"/><circle cx="95" cy="55" r="1.52" fill="#0098CC"/><circle cx="107" cy="55" r="1.52" fill="#0098CC"/><circle cx="111" cy="55" r="1.52" fill="#8A30C4"/><circle cx="115" cy="55" r="1.52" fill="#8A30C4"/><circle cx="123" cy="55" r="1.52" fill="#8A30C4"/><circle cx="127" cy="55" r="1.52" fill="#8A30C4"/><circle cx="131" cy="55" r="1.52" fill="#8A30C4"/><circle cx="139" cy="55" r="1.52" fill="#8A30C4"/><circle cx="147" cy="55" r="1.52" fill="#8A30C4"/><circle cx="3" cy="59" r="1.52" fill="#E0207A"/><circle cx="7" cy="59" r="1.52" fill="#E0207A"/><circle cx="19" cy="59" r="1.52" fill="#E0207A"/><circle cx="23" cy="59" r="1.52" fill="#E0207A"/><circle cx="27" cy="59" r="1.52" fill="#E0207A"/><circle cx="31" cy="59" r="1.52" fill="#E0207A"/><circle cx="35" cy="59" r="1.52" fill="#E0207A"/><circle cx="39" cy="59" r="1.52" fill="#E0207A"/><circle cx="43" cy="59" r="1.52" fill="#E0207A"/><circle cx="47" cy="59" r="1.52" fill="#E0207A"/><circle cx="51" cy="59" r="1.52" fill="#E0207A"/><circle cx="59" cy="59" r="1.52" fill="#E0207A"/><circle cx="71" cy="59" r="1.52" fill="#E0207A"/><circle cx="79" cy="59" r="1.52" fill="#0098CC"/><circle cx="83" cy="59" r="1.52" fill="#0098CC"/><circle cx="91" cy="59" r="1.52" fill="#0098CC"/><circle cx="103" cy="59" r="1.52" fill="#8A30C4"/><circle cx="115" cy="59" r="1.52" fill="#8A30C4"/><circle cx="119" cy="59" r="1.52" fill="#8A30C4"/><circle cx="123" cy="59" r="1.52" fill="#8A30C4"/><circle cx="127" cy="59" r="1.52" fill="#8A30C4"/><circle cx="131" cy="59" r="1.52" fill="#8A30C4"/><circle cx="139" cy="59" r="1.52" fill="#8A30C4"/><circle cx="143" cy="59" r="1.52" fill="#8A30C4"/><circle cx="35" cy="63" r="1.52" fill="#E0207A"/><circle cx="39" cy="63" r="1.52" fill="#E0207A"/><circle cx="47" cy="63" r="1.52" fill="#E0207A"/><circle cx="55" cy="63" r="1.52" fill="#E0207A"/><circle cx="67" cy="63" r="1.52" fill="#E0207A"/><circle cx="71" cy="63" r="1.52" fill="#E0207A"/><circle cx="79" cy="63" r="1.52" fill="#0098CC"/><circle cx="95" cy="63" r="1.52" fill="#0098CC"/><circle cx="115" cy="63" r="1.52" fill="#8A30C4"/><circle cx="143" cy="63" r="1.52" fill="#8A30C4"/><circle cx="3" cy="67" r="1.52" fill="#E0207A"/><circle cx="7" cy="67" r="1.52" fill="#E0207A"/><circle cx="11" cy="67" r="1.52" fill="#E0207A"/><circle cx="27" cy="67" r="1.52" fill="#E0207A"/><circle cx="35" cy="67" r="1.52" fill="#E0207A"/><circle cx="51" cy="67" r="1.52" fill="#E0207A"/><circle cx="59" cy="67" r="1.52" fill="#E0207A"/><circle cx="67" cy="67" r="1.52" fill="#E0207A"/><circle cx="71" cy="67" r="1.52" fill="#E0207A"/><circle cx="79" cy="67" r="1.52" fill="#0098CC"/><circle cx="91" cy="67" r="1.52" fill="#8A30C4"/><circle cx="99" cy="67" r="1.52" fill="#8A30C4"/><circle cx="103" cy="67" r="1.52" fill="#8A30C4"/><circle cx="111" cy="67" r="1.52" fill="#8A30C4"/><circle cx="115" cy="67" r="1.52" fill="#8A30C4"/><circle cx="119" cy="67" r="1.52" fill="#8A30C4"/><circle cx="135" cy="67" r="1.52" fill="#8A30C4"/><circle cx="139" cy="67" r="1.52" fill="#8A30C4"/><circle cx="143" cy="67" r="1.52" fill="#8A30C4"/><circle cx="7" cy="71" r="1.52" fill="#E0207A"/><circle cx="11" cy="71" r="1.52" fill="#E0207A"/><circle cx="15" cy="71" r="1.52" fill="#E0207A"/><circle cx="19" cy="71" r="1.52" fill="#E0207A"/><circle cx="23" cy="71" r="1.52" fill="#E0207A"/><circle cx="31" cy="71" r="1.52" fill="#E0207A"/><circle cx="43" cy="71" r="1.52" fill="#E0207A"/><circle cx="47" cy="71" r="1.52" fill="#E0207A"/><circle cx="59" cy="71" r="1.52" fill="#E0207A"/><circle cx="67" cy="71" r="1.52" fill="#E0207A"/><circle cx="79" cy="71" r="1.52" fill="#0098CC"/><circle cx="83" cy="71" r="1.52" fill="#0098CC"/><circle cx="87" cy="71" r="1.52" fill="#8A30C4"/><circle cx="91" cy="71" r="1.52" fill="#8A30C4"/><circle cx="95" cy="71" r="1.52" fill="#8A30C4"/><circle cx="103" cy="71" r="1.52" fill="#8A30C4"/><circle cx="107" cy="71" r="1.52" fill="#8A30C4"/><circle cx="111" cy="71" r="1.52" fill="#8A30C4"/><circle cx="123" cy="71" r="1.52" fill="#8A30C4"/><circle cx="135" cy="71" r="1.52" fill="#8A30C4"/><circle cx="139" cy="71" r="1.52" fill="#8A30C4"/><circle cx="147" cy="71" r="1.52" fill="#8A30C4"/><circle cx="3" cy="75" r="1.52" fill="#E0207A"/><circle cx="7" cy="75" r="1.52" fill="#E0207A"/><circle cx="19" cy="75" r="1.52" fill="#E0207A"/><circle cx="27" cy="75" r="1.52" fill="#E0207A"/><circle cx="31" cy="75" r="1.52" fill="#E0207A"/><circle cx="35" cy="75" r="1.52" fill="#E0207A"/><circle cx="39" cy="75" r="1.52" fill="#E0207A"/><circle cx="47" cy="75" r="1.52" fill="#E0207A"/><circle cx="55" cy="75" r="1.52" fill="#E0207A"/><circle cx="63" cy="75" r="1.52" fill="#E0207A"/><circle cx="71" cy="75" r="1.52" fill="#E0207A"/><circle cx="75" cy="75" r="1.52" fill="#E0207A"/><circle cx="79" cy="75" r="1.52" fill="#0098CC"/><circle cx="87" cy="75" r="1.52" fill="#8A30C4"/><circle cx="107" cy="75" r="1.52" fill="#8A30C4"/><circle cx="111" cy="75" r="1.52" fill="#8A30C4"/><circle cx="115" cy="75" r="1.52" fill="#8A30C4"/><circle cx="119" cy="75" r="1.52" fill="#8A30C4"/><circle cx="123" cy="75" r="1.52" fill="#8A30C4"/><circle cx="127" cy="75" r="1.52" fill="#8A30C4"/><circle cx="131" cy="75" r="1.52" fill="#8A30C4"/><circle cx="135" cy="75" r="1.52" fill="#8A30C4"/><circle cx="143" cy="75" r="1.52" fill="#8A30C4"/><circle cx="147" cy="75" r="1.52" fill="#8A30C4"/><circle cx="7" cy="79" r="1.52" fill="#6B8F00"/><circle cx="11" cy="79" r="1.52" fill="#6B8F00"/><circle cx="15" cy="79" r="1.52" fill="#6B8F00"/><circle cx="31" cy="79" r="1.52" fill="#6B8F00"/><circle cx="79" cy="79" r="1.52" fill="#E04A2A"/><circle cx="99" cy="79" r="1.52" fill="#8A30C4"/><circle cx="107" cy="79" r="1.52" fill="#8A30C4"/><circle cx="111" cy="79" r="1.52" fill="#8A30C4"/><circle cx="127" cy="79" r="1.52" fill="#8A30C4"/><circle cx="135" cy="79" r="1.52" fill="#8A30C4"/><circle cx="143" cy="79" r="1.52" fill="#8A30C4"/><circle cx="7" cy="83" r="1.52" fill="#6B8F00"/><circle cx="15" cy="83" r="1.52" fill="#6B8F00"/><circle cx="19" cy="83" r="1.52" fill="#6B8F00"/><circle cx="23" cy="83" r="1.52" fill="#6B8F00"/><circle cx="27" cy="83" r="1.52" fill="#6B8F00"/><circle cx="31" cy="83" r="1.52" fill="#6B8F00"/><circle cx="35" cy="83" r="1.52" fill="#6B8F00"/><circle cx="39" cy="83" r="1.52" fill="#6B8F00"/><circle cx="43" cy="83" r="1.52" fill="#6B8F00"/><circle cx="47" cy="83" r="1.52" fill="#6B8F00"/><circle cx="51" cy="83" r="1.52" fill="#6B8F00"/><circle cx="59" cy="83" r="1.52" fill="#6B8F00"/><circle cx="63" cy="83" r="1.52" fill="#6B8F00"/><circle cx="75" cy="83" r="1.52" fill="#6B8F00"/><circle cx="79" cy="83" r="1.52" fill="#E04A2A"/><circle cx="83" cy="83" r="1.52" fill="#E04A2A"/><circle cx="87" cy="83" r="1.52" fill="#8A30C4"/><circle cx="91" cy="83" r="1.52" fill="#8A30C4"/><circle cx="107" cy="83" r="1.52" fill="#8A30C4"/><circle cx="115" cy="83" r="1.52" fill="#8A30C4"/><circle cx="119" cy="83" r="1.52" fill="#8A30C4"/><circle cx="131" cy="83" r="1.52" fill="#8A30C4"/><circle cx="143" cy="83" r="1.52" fill="#8A30C4"/><circle cx="3" cy="87" r="1.52" fill="#6B8F00"/><circle cx="15" cy="87" r="1.52" fill="#6B8F00"/><circle cx="19" cy="87" r="1.52" fill="#6B8F00"/><circle cx="23" cy="87" r="1.52" fill="#6B8F00"/><circle cx="31" cy="87" r="1.52" fill="#6B8F00"/><circle cx="35" cy="87" r="1.52" fill="#6B8F00"/><circle cx="43" cy="87" r="1.52" fill="#6B8F00"/><circle cx="51" cy="87" r="1.52" fill="#6B8F00"/><circle cx="55" cy="87" r="1.52" fill="#6B8F00"/><circle cx="59" cy="87" r="1.52" fill="#6B8F00"/><circle cx="63" cy="87" r="1.52" fill="#6B8F00"/><circle cx="71" cy="87" r="1.52" fill="#6B8F00"/><circle cx="75" cy="87" r="1.52" fill="#E04A2A"/><circle cx="79" cy="87" r="1.52" fill="#E04A2A"/><circle cx="83" cy="87" r="1.52" fill="#E04A2A"/><circle cx="99" cy="87" r="1.52" fill="#8A30C4"/><circle cx="119" cy="87" r="1.52" fill="#8A30C4"/><circle cx="127" cy="87" r="1.52" fill="#8A30C4"/><circle cx="3" cy="91" r="1.52" fill="#6B8F00"/><circle cx="7" cy="91" r="1.52" fill="#6B8F00"/><circle cx="11" cy="91" r="1.52" fill="#6B8F00"/><circle cx="27" cy="91" r="1.52" fill="#6B8F00"/><circle cx="31" cy="91" r="1.52" fill="#6B8F00"/><circle cx="35" cy="91" r="1.52" fill="#6B8F00"/><circle cx="71" cy="91" r="1.52" fill="#6B8F00"/><circle cx="75" cy="91" r="1.52" fill="#E04A2A"/><circle cx="79" cy="91" r="1.52" fill="#E04A2A"/><circle cx="87" cy="91" r="1.52" fill="#E04A2A"/><circle cx="107" cy="91" r="1.52" fill="#8A30C4"/><circle cx="119" cy="91" r="1.52" fill="#8A30C4"/><circle cx="131" cy="91" r="1.52" fill="#8A30C4"/><circle cx="31" cy="95" r="1.52" fill="#6B8F00"/><circle cx="35" cy="95" r="1.52" fill="#6B8F00"/><circle cx="63" cy="95" r="1.52" fill="#6B8F00"/><circle cx="75" cy="95" r="1.52" fill="#E04A2A"/><circle cx="83" cy="95" r="1.52" fill="#E04A2A"/><circle cx="87" cy="95" r="1.52" fill="#E04A2A"/><circle cx="95" cy="95" r="1.52" fill="#E04A2A"/><circle cx="103" cy="95" r="1.52" fill="#8A30C4"/><circle cx="107" cy="95" r="1.52" fill="#8A30C4"/><circle cx="111" cy="95" r="1.52" fill="#8A30C4"/><circle cx="115" cy="95" r="1.52" fill="#8A30C4"/><circle cx="119" cy="95" r="1.52" fill="#8A30C4"/><circle cx="135" cy="95" r="1.52" fill="#8A30C4"/><circle cx="139" cy="95" r="1.52" fill="#8A30C4"/><circle cx="147" cy="95" r="1.52" fill="#8A30C4"/><circle cx="7" cy="99" r="1.52" fill="#6B8F00"/><circle cx="11" cy="99" r="1.52" fill="#6B8F00"/><circle cx="15" cy="99" r="1.52" fill="#6B8F00"/><circle cx="27" cy="99" r="1.52" fill="#6B8F00"/><circle cx="31" cy="99" r="1.52" fill="#6B8F00"/><circle cx="39" cy="99" r="1.52" fill="#6B8F00"/><circle cx="47" cy="99" r="1.52" fill="#6B8F00"/><circle cx="55" cy="99" r="1.52" fill="#6B8F00"/><circle cx="63" cy="99" r="1.52" fill="#6B8F00"/><circle cx="75" cy="99" r="1.52" fill="#E04A2A"/><circle cx="123" cy="99" r="1.52" fill="#8A30C4"/><circle cx="135" cy="99" r="1.52" fill="#8A30C4"/><circle cx="139" cy="99" r="1.52" fill="#8A30C4"/><circle cx="143" cy="99" r="1.52" fill="#8A30C4"/><circle cx="7" cy="103" r="1.52" fill="#6B8F00"/><circle cx="15" cy="103" r="1.52" fill="#6B8F00"/><circle cx="31" cy="103" r="1.52" fill="#6B8F00"/><circle cx="43" cy="103" r="1.52" fill="#6B8F00"/><circle cx="47" cy="103" r="1.52" fill="#6B8F00"/><circle cx="51" cy="103" r="1.52" fill="#6B8F00"/><circle cx="71" cy="103" r="1.52" fill="#E04A2A"/><circle cx="75" cy="103" r="1.52" fill="#E04A2A"/><circle cx="87" cy="103" r="1.52" fill="#E04A2A"/><circle cx="91" cy="103" r="1.52" fill="#E04A2A"/><circle cx="95" cy="103" r="1.52" fill="#E04A2A"/><circle cx="115" cy="103" r="1.52" fill="#8A30C4"/><circle cx="131" cy="103" r="1.52" fill="#8A30C4"/><circle cx="147" cy="103" r="1.52" fill="#8A30C4"/><circle cx="7" cy="107" r="1.52" fill="#6B8F00"/><circle cx="23" cy="107" r="1.52" fill="#6B8F00"/><circle cx="27" cy="107" r="1.52" fill="#6B8F00"/><circle cx="35" cy="107" r="1.52" fill="#6B8F00"/><circle cx="47" cy="107" r="1.52" fill="#6B8F00"/><circle cx="51" cy="107" r="1.52" fill="#6B8F00"/><circle cx="55" cy="107" r="1.52" fill="#6B8F00"/><circle cx="59" cy="107" r="1.52" fill="#6B8F00"/><circle cx="67" cy="107" r="1.52" fill="#6B8F00"/><circle cx="71" cy="107" r="1.52" fill="#E04A2A"/><circle cx="75" cy="107" r="1.52" fill="#E04A2A"/><circle cx="99" cy="107" r="1.52" fill="#E04A2A"/><circle cx="103" cy="107" r="1.52" fill="#E04A2A"/><circle cx="111" cy="107" r="1.52" fill="#E04A2A"/><circle cx="115" cy="107" r="1.52" fill="#E04A2A"/><circle cx="131" cy="107" r="1.52" fill="#8A30C4"/><circle cx="143" cy="107" r="1.52" fill="#8A30C4"/><circle cx="3" cy="111" r="1.52" fill="#6B8F00"/><circle cx="11" cy="111" r="1.52" fill="#6B8F00"/><circle cx="15" cy="111" r="1.52" fill="#6B8F00"/><circle cx="19" cy="111" r="1.52" fill="#6B8F00"/><circle cx="35" cy="111" r="1.52" fill="#6B8F00"/><circle cx="39" cy="111" r="1.52" fill="#6B8F00"/><circle cx="43" cy="111" r="1.52" fill="#6B8F00"/><circle cx="47" cy="111" r="1.52" fill="#6B8F00"/><circle cx="55" cy="111" r="1.52" fill="#6B8F00"/><circle cx="79" cy="111" r="1.52" fill="#E04A2A"/><circle cx="91" cy="111" r="1.52" fill="#E04A2A"/><circle cx="99" cy="111" r="1.52" fill="#E04A2A"/><circle cx="107" cy="111" r="1.52" fill="#E04A2A"/><circle cx="115" cy="111" r="1.52" fill="#E04A2A"/><circle cx="119" cy="111" r="1.52" fill="#E04A2A"/><circle cx="127" cy="111" r="1.52" fill="#8A30C4"/><circle cx="143" cy="111" r="1.52" fill="#8A30C4"/><circle cx="23" cy="115" r="1.52" fill="#6B8F00"/><circle cx="27" cy="115" r="1.52" fill="#6B8F00"/><circle cx="39" cy="115" r="1.52" fill="#6B8F00"/><circle cx="51" cy="115" r="1.52" fill="#6B8F00"/><circle cx="63" cy="115" r="1.52" fill="#6B8F00"/><circle cx="71" cy="115" r="1.52" fill="#E04A2A"/><circle cx="75" cy="115" r="1.52" fill="#E04A2A"/><circle cx="79" cy="115" r="1.52" fill="#E04A2A"/><circle cx="83" cy="115" r="1.52" fill="#E04A2A"/><circle cx="87" cy="115" r="1.52" fill="#E04A2A"/><circle cx="95" cy="115" r="1.52" fill="#E04A2A"/><circle cx="103" cy="115" r="1.52" fill="#E04A2A"/><circle cx="111" cy="115" r="1.52" fill="#E04A2A"/><circle cx="115" cy="115" r="1.52" fill="#E04A2A"/><circle cx="119" cy="115" r="1.52" fill="#E04A2A"/><circle cx="123" cy="115" r="1.52" fill="#E04A2A"/><circle cx="127" cy="115" r="1.52" fill="#E04A2A"/><circle cx="131" cy="115" r="1.52" fill="#8A30C4"/><circle cx="139" cy="115" r="1.52" fill="#8A30C4"/><circle cx="147" cy="115" r="1.52" fill="#8A30C4"/><circle cx="35" cy="119" r="1.52" fill="#6B8F00"/><circle cx="39" cy="119" r="1.52" fill="#6B8F00"/><circle cx="55" cy="119" r="1.52" fill="#6B8F00"/><circle cx="79" cy="119" r="1.52" fill="#E04A2A"/><circle cx="87" cy="119" r="1.52" fill="#E04A2A"/><circle cx="95" cy="119" r="1.52" fill="#E04A2A"/><circle cx="103" cy="119" r="1.52" fill="#E04A2A"/><circle cx="107" cy="119" r="1.52" fill="#E04A2A"/><circle cx="115" cy="119" r="1.52" fill="#E04A2A"/><circle cx="131" cy="119" r="1.52" fill="#E04A2A"/><circle cx="135" cy="119" r="1.52" fill="#8A30C4"/><circle cx="139" cy="119" r="1.52" fill="#8A30C4"/><circle cx="147" cy="119" r="1.52" fill="#8A30C4"/><circle cx="35" cy="123" r="1.52" fill="#6B8F00"/><circle cx="39" cy="123" r="1.52" fill="#6B8F00"/><circle cx="47" cy="123" r="1.52" fill="#6B8F00"/><circle cx="51" cy="123" r="1.52" fill="#6B8F00"/><circle cx="55" cy="123" r="1.52" fill="#6B8F00"/><circle cx="79" cy="123" r="1.52" fill="#E04A2A"/><circle cx="83" cy="123" r="1.52" fill="#E04A2A"/><circle cx="87" cy="123" r="1.52" fill="#E04A2A"/><circle cx="115" cy="123" r="1.52" fill="#E04A2A"/><circle cx="123" cy="123" r="1.52" fill="#E04A2A"/><circle cx="131" cy="123" r="1.52" fill="#E04A2A"/><circle cx="135" cy="123" r="1.52" fill="#E04A2A"/><circle cx="143" cy="123" r="1.52" fill="#8A30C4"/><circle cx="147" cy="123" r="1.52" fill="#8A30C4"/><circle cx="43" cy="127" r="1.52" fill="#6B8F00"/><circle cx="55" cy="127" r="1.52" fill="#6B8F00"/><circle cx="63" cy="127" r="1.52" fill="#E04A2A"/><circle cx="71" cy="127" r="1.52" fill="#E04A2A"/><circle cx="79" cy="127" r="1.52" fill="#E04A2A"/><circle cx="83" cy="127" r="1.52" fill="#E04A2A"/><circle cx="87" cy="127" r="1.52" fill="#E04A2A"/><circle cx="91" cy="127" r="1.52" fill="#E04A2A"/><circle cx="95" cy="127" r="1.52" fill="#E04A2A"/><circle cx="107" cy="127" r="1.52" fill="#E04A2A"/><circle cx="111" cy="127" r="1.52" fill="#E04A2A"/><circle cx="115" cy="127" r="1.52" fill="#E04A2A"/><circle cx="131" cy="127" r="1.52" fill="#E04A2A"/><circle cx="135" cy="127" r="1.52" fill="#E04A2A"/><circle cx="39" cy="131" r="1.52" fill="#6B8F00"/><circle cx="43" cy="131" r="1.52" fill="#6B8F00"/><circle cx="47" cy="131" r="1.52" fill="#6B8F00"/><circle cx="55" cy="131" r="1.52" fill="#6B8F00"/><circle cx="59" cy="131" r="1.52" fill="#6B8F00"/><circle cx="67" cy="131" r="1.52" fill="#E04A2A"/><circle cx="71" cy="131" r="1.52" fill="#E04A2A"/><circle cx="79" cy="131" r="1.52" fill="#E04A2A"/><circle cx="95" cy="131" r="1.52" fill="#E04A2A"/><circle cx="107" cy="131" r="1.52" fill="#E04A2A"/><circle cx="115" cy="131" r="1.52" fill="#E04A2A"/><circle cx="119" cy="131" r="1.52" fill="#E04A2A"/><circle cx="123" cy="131" r="1.52" fill="#E04A2A"/><circle cx="127" cy="131" r="1.52" fill="#E04A2A"/><circle cx="131" cy="131" r="1.52" fill="#E04A2A"/><circle cx="135" cy="131" r="1.52" fill="#E04A2A"/><circle cx="143" cy="131" r="1.52" fill="#E04A2A"/><circle cx="35" cy="135" r="1.52" fill="#6B8F00"/><circle cx="47" cy="135" r="1.52" fill="#6B8F00"/><circle cx="55" cy="135" r="1.52" fill="#6B8F00"/><circle cx="63" cy="135" r="1.52" fill="#E04A2A"/><circle cx="71" cy="135" r="1.52" fill="#E04A2A"/><circle cx="75" cy="135" r="1.52" fill="#E04A2A"/><circle cx="83" cy="135" r="1.52" fill="#E04A2A"/><circle cx="87" cy="135" r="1.52" fill="#E04A2A"/><circle cx="103" cy="135" r="1.52" fill="#E04A2A"/><circle cx="111" cy="135" r="1.52" fill="#E04A2A"/><circle cx="115" cy="135" r="1.52" fill="#E04A2A"/><circle cx="123" cy="135" r="1.52" fill="#E04A2A"/><circle cx="131" cy="135" r="1.52" fill="#E04A2A"/><circle cx="135" cy="135" r="1.52" fill="#E04A2A"/><circle cx="139" cy="135" r="1.52" fill="#E04A2A"/><circle cx="35" cy="139" r="1.52" fill="#6B8F00"/><circle cx="43" cy="139" r="1.52" fill="#6B8F00"/><circle cx="51" cy="139" r="1.52" fill="#6B8F00"/><circle cx="55" cy="139" r="1.52" fill="#6B8F00"/><circle cx="67" cy="139" r="1.52" fill="#E04A2A"/><circle cx="71" cy="139" r="1.52" fill="#E04A2A"/><circle cx="79" cy="139" r="1.52" fill="#E04A2A"/><circle cx="87" cy="139" r="1.52" fill="#E04A2A"/><circle cx="91" cy="139" r="1.52" fill="#E04A2A"/><circle cx="107" cy="139" r="1.52" fill="#E04A2A"/><circle cx="123" cy="139" r="1.52" fill="#E04A2A"/><circle cx="127" cy="139" r="1.52" fill="#E04A2A"/><circle cx="131" cy="139" r="1.52" fill="#E04A2A"/><circle cx="135" cy="139" r="1.52" fill="#E04A2A"/><circle cx="143" cy="139" r="1.52" fill="#E04A2A"/><circle cx="39" cy="143" r="1.52" fill="#6B8F00"/><circle cx="47" cy="143" r="1.52" fill="#6B8F00"/><circle cx="51" cy="143" r="1.52" fill="#6B8F00"/><circle cx="55" cy="143" r="1.52" fill="#6B8F00"/><circle cx="83" cy="143" r="1.52" fill="#E04A2A"/><circle cx="87" cy="143" r="1.52" fill="#E04A2A"/><circle cx="91" cy="143" r="1.52" fill="#E04A2A"/><circle cx="95" cy="143" r="1.52" fill="#E04A2A"/><circle cx="99" cy="143" r="1.52" fill="#E04A2A"/><circle cx="103" cy="143" r="1.52" fill="#E04A2A"/><circle cx="111" cy="143" r="1.52" fill="#E04A2A"/><circle cx="119" cy="143" r="1.52" fill="#E04A2A"/><circle cx="123" cy="143" r="1.52" fill="#E04A2A"/><circle cx="135" cy="143" r="1.52" fill="#E04A2A"/><circle cx="139" cy="143" r="1.52" fill="#E04A2A"/><circle cx="47" cy="147" r="1.52" fill="#6B8F00"/><circle cx="67" cy="147" r="1.52" fill="#E04A2A"/><circle cx="79" cy="147" r="1.52" fill="#E04A2A"/><circle cx="83" cy="147" r="1.52" fill="#E04A2A"/><circle cx="95" cy="147" r="1.52" fill="#E04A2A"/><circle cx="103" cy="147" r="1.52" fill="#E04A2A"/><circle cx="107" cy="147" r="1.52" fill="#E04A2A"/><circle cx="135" cy="147" r="1.52" fill="#E04A2A"/><circle cx="139" cy="147" r="1.52" fill="#E04A2A"/><circle cx="143" cy="147" r="1.52" fill="#E04A2A"/><circle cx="147" cy="147" r="1.52" fill="#E04A2A"/></svg></div>
+      </div>
+      <p class="qr-label">Scan for Tickets &amp; Info</p>
+      <p class="qr-url">auction.supportabernethy.org</p>
+    </div>
+
+    <!-- Separator -->
+    <div class="sep"></div>
+
+    <!-- Details grid -->
+    <div class="details">
+      <div class="detail">
+        <p class="lbl">When</p>
+        <p class="val">Saturday<br>April 18</p>
+        <p class="sub">5 PM &ndash; 10 PM</p>
+      </div>
+      <div class="detail">
+        <p class="lbl">Where</p>
+        <p class="val">1600 SE<br>Division St</p>
+        <p class="sub">Portland, OR</p>
+      </div>
+      <div class="detail">
+        <p class="lbl">Dress Code</p>
+        <p class="val">Gallery<br>Glam</p>
+        <p class="sub">Vibrant &amp; upscale</p>
+      </div>
+      <div class="detail">
+        <p class="lbl">Who</p>
+        <p class="val">Adults<br>Only</p>
+        <p class="sub">After party to follow</p>
+      </div>
+    </div>
+
+    <!-- What to expect -->
+    <div class="expect">
+      <p class="expect-label">What to Expect</p>
+      <div class="expect-items">
+        <span class="expect-item">Dinner &amp; Drinks</span>
+        <span class="expect-item">Live Auction</span>
+        <span class="expect-item">Prizes &amp; Art</span>
+        <span class="expect-item">After Party</span>
+      </div>
+    </div>
+
+    <!-- Donations callout -->
+    <div class="donations">
+      <p class="donations-title">Donations Needed!</p>
+      <p class="donations-sub">Gift cards, art, vacation homes, experiences &mdash; auction@supportabernethy.org</p>
+    </div>
+
+    <!-- Ticket — compact -->
+    <div class="ticket">
+      <p class="ticket-line"><span class="price">$100</span> per person</p>
+      <p class="ticket-promo">Volunteering? Use code <code>Volunteer2026</code> for $30 off</p>
+    </div>
+
+    <!-- Contact -->
+    <p class="bottom-contact">
+      <strong>auction@supportabernethy.org</strong> &middot; Instagram: @abernethypta
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

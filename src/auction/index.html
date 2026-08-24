@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🥂</text></svg>">
+<title>An Artful Affair — Abernethy Auction 2026</title>
+<meta name="description" content="Thank you to everyone who joined us April 18. We exceeded our goal! Buy-in parties still open — join Kids' Night Out before April 24.">
+<meta property="og:title" content="An Artful Affair — Abernethy Auction 2026">
+<meta property="og:description" content="Thank you to everyone who joined us April 18. We exceeded our goal! Buy-in parties still open — join Kids' Night Out before April 24.">
+<meta property="og:image" content="https://supportabernethy.org/auction/og-image.png">
+<meta property="og:url" content="https://supportabernethy.org/auction/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --fg: #F0EDE8;
+    --neon-pink: #FF2D9B;
+    --neon-blue: #00D4FF;
+    --neon-green: #C8FF00;
+    --neon-orange: #FF5E3A;
+    --neon-violet: #B24BF3;
+    --muted: #999;
+    --faint: #444;
+    --border: #333;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Grain texture */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10000;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ========== PAINT ELEMENTS ========== */
+  .paint {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Hero paint */
+  .hero-p1 {
+    width: 75vw; height: 160px;
+    background: var(--neon-pink);
+    opacity: 0.55;
+    border-radius: 82% 18% 76% 24% / 54% 46% 62% 38%;
+    box-shadow: 0 0 80px rgba(255, 45, 155, 0.5);
+    transform: rotate(-8deg);
+    top: 28%; left: -12%;
+  }
+  .hero-p2 {
+    width: 55vw; height: 220px;
+    background: var(--neon-blue);
+    opacity: 0.35;
+    border-radius: 24% 76% 35% 65% / 62% 38% 68% 32%;
+    box-shadow: 0 0 100px rgba(0, 212, 255, 0.4);
+    transform: rotate(14deg);
+    top: 10%; right: -18%;
+  }
+  .hero-p3 {
+    width: 220px; height: 200px;
+    background: var(--neon-green);
+    opacity: 0.25;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    box-shadow: 0 0 60px rgba(200, 255, 0, 0.3);
+    bottom: 8%; left: 55%;
+    transform: rotate(-18deg);
+  }
+  .hero-p4 {
+    width: 35vw; height: 100px;
+    background: var(--neon-violet);
+    opacity: 0.3;
+    border-radius: 70% 30% 60% 40% / 45% 55% 50% 50%;
+    box-shadow: 0 0 50px rgba(178, 75, 243, 0.4);
+    transform: rotate(6deg);
+    top: 55%; left: 5%;
+  }
+  /* Paint drip from hero */
+  .hero-drip {
+    width: 18px; height: 180px;
+    background: var(--neon-pink);
+    opacity: 0.6;
+    border-radius: 40% 60% 55% 45% / 10% 10% 90% 90%;
+    box-shadow: 0 0 15px rgba(255, 45, 155, 0.5);
+    bottom: -80px; left: 20%;
+    z-index: 3;
+  }
+
+  /* Details paint */
+  .details-p1 {
+    width: 80%; height: 300px;
+    background: var(--neon-violet);
+    opacity: 0.1;
+    border-radius: 40% 60% 70% 30% / 40% 50% 50% 60%;
+    filter: blur(40px);
+    top: -5%; left: 10%;
+  }
+  .details-p2 {
+    width: 15px; height: 120px;
+    background: var(--neon-blue);
+    opacity: 0.5;
+    border-radius: 50% 50% 55% 45% / 10% 10% 90% 90%;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+    top: 10%; right: 8%;
+    transform: rotate(5deg);
+  }
+
+  /* Venue paint */
+  .venue-p1 {
+    width: 70%; height: 60px;
+    background: var(--neon-orange);
+    opacity: 0.15;
+    border-radius: 75% 25% 65% 35% / 50% 50% 55% 45%;
+    filter: blur(30px);
+    top: 40%; left: 15%;
+  }
+
+  /* Venue image */
+  .venue-img {
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.85;
+    display: block;
+    margin: 2rem 0;
+  }
+
+  /* Venue details */
+  .venue-details {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  .venue-details strong {
+    color: var(--fg);
+    font-weight: 700;
+  }
+
+  .venue-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  .venue-links .btn-ghost {
+    font-size: 0.65rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Dresscode paint */
+  .dress-p1 {
+    width: 85%; height: 55px;
+    background: var(--neon-blue);
+    opacity: 0.3;
+    border-radius: 90% 10% 85% 15% / 55% 45% 55% 45%;
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
+    top: 48%; left: 8%;
+    transform: rotate(-3deg);
+  }
+  .dress-p2 {
+    width: 120px; height: 110px;
+    background: var(--neon-pink);
+    opacity: 0.2;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    box-shadow: 0 0 30px rgba(255, 45, 155, 0.3);
+    top: 15%; right: 5%;
+    transform: rotate(20deg);
+  }
+
+  /* Ticket paint */
+  .ticket-p1 {
+    width: min(380px, 90vw); height: 320px;
+    background: radial-gradient(ellipse, var(--neon-pink) 0%, var(--neon-violet) 60%, transparent 80%);
+    opacity: 0.2;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    box-shadow: 0 0 100px rgba(255, 45, 155, 0.3);
+    top: 25%; left: 50%;
+    transform: translateX(-50%) rotate(8deg);
+  }
+  .ticket-p2 {
+    width: 22px; height: 200px;
+    background: var(--neon-green);
+    opacity: 0.5;
+    border-radius: 40% 60% 55% 45% / 8% 8% 92% 92%;
+    box-shadow: 0 0 18px rgba(200, 255, 0, 0.5);
+    top: 15%; right: 8%;
+    transform: rotate(4deg);
+  }
+
+  /* Prizes paint */
+  .prizes-p1 {
+    width: 65vw; height: 70px;
+    background: var(--neon-orange);
+    opacity: 0.25;
+    border-radius: 85% 15% 80% 20% / 55% 45% 60% 40%;
+    box-shadow: 0 0 50px rgba(255, 94, 58, 0.3);
+    top: 35%; left: -8%;
+    transform: rotate(4deg);
+  }
+  .prizes-p2 {
+    width: 100px; height: 90px;
+    background: var(--neon-green);
+    opacity: 0.2;
+    border-radius: 50% 50% 45% 55% / 60% 40% 55% 45%;
+    box-shadow: 0 0 25px rgba(200, 255, 0, 0.3);
+    bottom: 10%; right: 10%;
+    transform: rotate(-12deg);
+  }
+
+  /* Volunteer paint */
+  .volunteer-p1 {
+    width: 50vw; height: 45px;
+    background: var(--neon-violet);
+    opacity: 0.2;
+    border-radius: 80% 20% 75% 25% / 50% 50% 50% 50%;
+    box-shadow: 0 0 35px rgba(178, 75, 243, 0.3);
+    top: 30%; right: -5%;
+    transform: rotate(-5deg);
+  }
+
+  /* Scattered dots */
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ========== HERO ========== */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 1.5rem 4rem;
+    position: relative;
+    overflow: visible;
+  }
+
+  .hero-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards 0.2s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+  }
+
+  .hero-title .line-an {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(4rem, 18vw, 10rem);
+    line-height: 0.85;
+    letter-spacing: 0.02em;
+    color: var(--fg);
+    opacity: 0;
+    animation: slideRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+  }
+
+  .hero-title .line-artful {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(4.5rem, 22vw, 14rem);
+    line-height: 0.85;
+    letter-spacing: 0.02em;
+    -webkit-text-stroke: 2px var(--neon-pink);
+    color: transparent;
+    text-shadow: 0 0 30px rgba(255, 45, 155, 0.4), 0 0 80px rgba(255, 45, 155, 0.15);
+    opacity: 0;
+    animation: slideLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
+  }
+
+  .hero-title .line-affair {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(3rem, 14vw, 8rem);
+    line-height: 1;
+    color: var(--fg);
+    padding-left: 10%;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    animation: slideRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.7s;
+  }
+
+  .hero-title .line-affair::before {
+    content: '';
+    position: absolute;
+    width: 115%; height: 55%;
+    background: var(--neon-pink);
+    opacity: 0.35;
+    border-radius: 82% 18% 76% 24% / 50% 50% 55% 45%;
+    top: 25%; left: -8%;
+    z-index: -1;
+    transform: rotate(-2deg);
+    box-shadow: 0 0 40px rgba(255, 45, 155, 0.4);
+  }
+
+  .hero-tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--neon-green);
+    text-shadow: 0 0 12px rgba(200, 255, 0, 0.6), 0 0 40px rgba(200, 255, 0, 0.2);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards 0.9s;
+  }
+
+  .hero-info {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards 1s;
+  }
+  .hero-info strong {
+    color: var(--fg);
+    font-weight: 700;
+  }
+
+  .hero-cta-wrap {
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 1.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .ig-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  .ig-link:hover {
+    color: var(--fg);
+    text-shadow: 0 0 10px rgba(240, 237, 232, 0.3);
+  }
+
+  /* ========== BUTTONS ========== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-primary {
+    background: var(--neon-orange);
+    color: var(--bg);
+    box-shadow: 0 0 25px rgba(255, 94, 58, 0.5), 0 0 80px rgba(255, 94, 58, 0.15);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 35px rgba(255, 94, 58, 0.7), 0 0 100px rgba(255, 94, 58, 0.25);
+  }
+
+  .btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--fg);
+    color: var(--fg);
+  }
+  .btn-outline:hover {
+    background: var(--fg);
+    color: var(--bg);
+    box-shadow: 0 0 20px rgba(240, 237, 232, 0.2);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    border: 1.5px solid var(--faint);
+    color: var(--muted);
+  }
+  .btn-ghost:hover {
+    border-color: var(--neon-pink);
+    color: var(--neon-pink);
+    box-shadow: 0 0 15px rgba(255, 45, 155, 0.2);
+  }
+
+
+
+  /* ========== MARQUEE ========== */
+  .marquee-wrap {
+    position: relative;
+    z-index: 5;
+    padding: 0.25rem 0;
+  }
+
+  .marquee {
+    overflow: hidden;
+    padding: 0.6rem 0;
+  }
+
+  .marquee-1 {
+    background: var(--neon-pink);
+    transform: rotate(-2deg) scaleX(1.06);
+    box-shadow: 0 0 40px rgba(255, 45, 155, 0.5);
+  }
+
+  .marquee-2 {
+    background: var(--neon-blue);
+    transform: rotate(1.5deg) scaleX(1.06);
+    margin-top: -0.2rem;
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+  }
+
+  .marquee-1 .marquee-track {
+    animation: marquee 25s linear infinite;
+  }
+  .marquee-2 .marquee-track {
+    animation: marquee 30s linear infinite reverse;
+  }
+
+  .marquee-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    color: var(--bg);
+    white-space: nowrap;
+  }
+
+  /* ========== WHY SECTION ========== */
+  .why-section {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .why-section .why-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    line-height: 1.3;
+    color: var(--fg);
+    margin-bottom: 1.5rem;
+  }
+
+  .why-section .why-headline em {
+    font-style: normal;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px rgba(255, 45, 155, 0.3);
+  }
+
+  .why-section .why-body {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* ========== SECTIONS ==========*/
+  .section {
+    padding: 3rem 1.5rem;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  .section-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--neon-orange);
+    text-shadow: 0 0 8px rgba(255, 94, 58, 0.3);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+    color: var(--fg);
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--neon-pink);
+    text-shadow: 0 0 20px rgba(255, 45, 155, 0.3);
+  }
+
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: var(--neon-pink);
+    box-shadow: 0 0 8px rgba(255, 45, 155, 0.5);
+    margin: 0 0 2rem;
+  }
+
+  /* ========== DETAIL CARDS ========== */
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin: 2rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .detail-card {
+    background: var(--bg);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .detail-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue), transparent);
+    opacity: 0.4;
+  }
+
+  .detail-card .label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .detail-card .value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .detail-card .note {
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+
+  /* ========== DRESS CODE ========== */
+  .dresscode-section {
+    position: relative;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .dresscode {
+    border: 1px solid var(--border);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dresscode::before {
+    content: 'DRESS CODE';
+    position: absolute;
+    top: -0.6em;
+    left: 1.5rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--neon-blue);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+    background: var(--bg);
+    padding: 0 0.5rem;
+  }
+
+  .dresscode-img-wrap {
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .dresscode-img {
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.85;
+    display: block;
+  }
+
+  .dresscode-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .dresscode-video.playing {
+    opacity: 0.85;
+  }
+
+  .dresscode-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    color: var(--fg);
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    cursor: pointer;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+  }
+
+  .dresscode-title.neon-buzz {
+    animation: neon-flicker 2.5s ease-in-out forwards;
+  }
+
+  @keyframes neon-flicker {
+    0%    { color: var(--fg); text-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+    4%    { color: var(--neon-pink); text-shadow: 0 0 8px var(--neon-pink), 0 0 30px var(--neon-pink); }
+    6%    { color: var(--fg); text-shadow: none; }
+    10%   { color: var(--neon-pink); text-shadow: 0 0 10px var(--neon-pink), 0 0 40px var(--neon-pink); }
+    12%   { color: var(--fg); text-shadow: none; }
+    14%   { color: var(--neon-pink); text-shadow: 0 0 6px var(--neon-pink), 0 0 25px var(--neon-pink); }
+    18%   { color: var(--fg); text-shadow: none; }
+    25%   { color: var(--neon-blue); text-shadow: 0 0 12px var(--neon-blue), 0 0 40px var(--neon-blue); }
+    28%   { color: var(--fg); text-shadow: none; }
+    30%   { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue), 0 0 35px var(--neon-blue); }
+    40%   { color: var(--neon-violet); text-shadow: 0 0 14px var(--neon-violet), 0 0 45px var(--neon-violet); }
+    42%   { color: var(--fg); text-shadow: none; }
+    44%   { color: var(--neon-violet); text-shadow: 0 0 8px var(--neon-violet), 0 0 30px var(--neon-violet); }
+    55%   { color: var(--neon-green); text-shadow: 0 0 12px var(--neon-green), 0 0 40px var(--neon-green); }
+    57%   { color: var(--fg); text-shadow: none; }
+    60%   { color: var(--neon-green); text-shadow: 0 0 10px var(--neon-green), 0 0 35px var(--neon-green); }
+    70%   { color: var(--neon-orange); text-shadow: 0 0 12px var(--neon-orange), 0 0 40px var(--neon-orange); }
+    73%   { color: var(--fg); text-shadow: none; }
+    76%   { color: var(--neon-orange); text-shadow: 0 0 8px var(--neon-orange), 0 0 25px var(--neon-orange); }
+    85%   { color: var(--neon-blue); text-shadow: 0 0 15px var(--neon-blue), 0 0 50px var(--neon-blue); }
+    88%   { color: var(--fg); text-shadow: none; }
+    92%   { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue), 0 0 35px var(--neon-blue); }
+    100%  { color: var(--fg); text-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+  }
+
+  .dresscode p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* ========== LOT CARD (EARLY BIRD) ========== */
+  .ticket-section {
+    position: relative;
+    overflow: visible;
+  }
+
+  .lot-card-wrap {
+    margin: 3rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .lot-card {
+    border: 2px solid var(--neon-pink);
+    box-shadow: 0 0 30px rgba(255, 45, 155, 0.15), inset 0 0 40px rgba(255, 45, 155, 0.03);
+    padding: 2.5rem 2rem;
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+
+  .lot-card::after {
+    content: '';
+    position: absolute;
+    top: 6px; left: 6px;
+    right: -6px; bottom: -6px;
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .lot-number {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .lot-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--fg);
+    text-shadow: 0 0 20px rgba(255, 45, 155, 0.3);
+    margin: 0.5rem 0;
+  }
+
+  .lot-per {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .lot-urgency {
+    font-size: 0.75rem;
+    color: var(--neon-orange);
+    text-shadow: 0 0 8px rgba(255, 94, 58, 0.3);
+    margin: 1rem 0 1.5rem;
+    font-weight: 700;
+  }
+
+  .lot-cta { margin: 1.5rem 0 0; }
+
+  .lot-promo {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  .lot-promo code {
+    background: rgba(200, 255, 0, 0.1);
+    color: var(--neon-green);
+    text-shadow: 0 0 6px rgba(200, 255, 0, 0.3);
+    padding: 0.15rem 0.4rem;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .lot-support {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 1rem;
+  }
+
+  /* ========== PRIZES ========== */
+  .prizes-section {
+    position: relative;
+    overflow: visible;
+  }
+
+  .prize-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .prize-tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .prize-tag:nth-child(1):hover { border-color: var(--neon-pink); color: var(--neon-pink); box-shadow: 0 0 12px rgba(255, 45, 155, 0.3); }
+  .prize-tag:nth-child(2):hover { border-color: var(--neon-blue); color: var(--neon-blue); box-shadow: 0 0 12px rgba(0, 212, 255, 0.3); }
+  .prize-tag:nth-child(3):hover { border-color: var(--neon-orange); color: var(--neon-orange); box-shadow: 0 0 12px rgba(255, 94, 58, 0.3); }
+  .prize-tag:nth-child(4):hover { border-color: var(--neon-green); color: var(--neon-green); box-shadow: 0 0 12px rgba(200, 255, 0, 0.3); }
+
+  /* ========== DONORS ========== */
+  .btn-donor {
+    background: transparent;
+    border: 1.5px solid var(--neon-pink);
+    color: var(--neon-pink);
+  }
+  .btn-donor:hover {
+    background: var(--neon-pink);
+    color: var(--bg);
+    box-shadow: 0 0 20px rgba(255, 45, 155, 0.4);
+  }
+  .donor-subheading {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
+  }
+  .donor-subheading--first {
+    margin-top: 2rem;
+  }
+  .donor-subheading + .major-donors,
+  .donor-subheading + .donor-tags {
+    margin-top: 0;
+  }
+  .donor-cta {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .major-donors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 1.5rem 0 0.5rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .major-donor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    width: 180px;
+    height: 100px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .major-donor-logo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+  }
+  .major-donor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  @media (max-width: 480px) {
+    .major-donor-logo {
+      width: 140px;
+      height: 80px;
+      padding: 0.75rem 1rem;
+    }
+  }
+
+  .donor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .donor-tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--fg);
+    transition: all 0.3s ease;
+  }
+  .donor-tag:nth-child(5n+1):hover { border-color: var(--neon-pink); color: var(--neon-pink); box-shadow: 0 0 12px rgba(255, 45, 155, 0.3); }
+  .donor-tag:nth-child(5n+2):hover { border-color: var(--neon-blue); color: var(--neon-blue); box-shadow: 0 0 12px rgba(0, 212, 255, 0.3); }
+  .donor-tag:nth-child(5n+3):hover { border-color: var(--neon-orange); color: var(--neon-orange); box-shadow: 0 0 12px rgba(255, 94, 58, 0.3); }
+  .donor-tag:nth-child(5n+4):hover { border-color: var(--neon-green); color: var(--neon-green); box-shadow: 0 0 12px rgba(200, 255, 0, 0.3); }
+  .donor-tag:nth-child(5n+5):hover { border-color: var(--neon-violet); color: var(--neon-violet); box-shadow: 0 0 12px rgba(178, 75, 243, 0.3); }
+
+  .section-body {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ========== VOLUNTEER ========== */
+  .volunteer-section {
+    position: relative;
+    overflow: visible;
+  }
+
+  .volunteer-box {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 0;
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .volunteer-box p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+    padding: 4rem 1.5rem 3rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .footer-label {
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-bottom: 1rem;
+  }
+
+  .footer-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    color: var(--muted);
+  }
+
+  .footer-email {
+    margin-top: 1.5rem;
+  }
+
+  .footer-email a {
+    font-size: 0.75rem;
+    color: var(--neon-pink);
+    border-bottom: 1px solid rgba(255, 45, 155, 0.3);
+    transition: all 0.3s;
+  }
+  .footer-email a:hover {
+    border-color: var(--neon-pink);
+    text-shadow: 0 0 8px rgba(255, 45, 155, 0.3);
+  }
+
+  .footer-ig {
+    margin-top: 1rem;
+  }
+  .footer-ig a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-ig a:hover {
+    color: var(--fg);
+  }
+
+  .footer-school {
+    font-size: 0.65rem;
+    color: var(--faint);
+    margin-top: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* ========== STICKY MOBILE CTA ========== */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    padding: 1rem 1.5rem;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid var(--neon-pink);
+    box-shadow: 0 -5px 30px rgba(255, 45, 155, 0.15);
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .sticky-cta.visible { transform: translateY(0); }
+
+  .sticky-cta-info {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--neon-green);
+    text-shadow: 0 0 6px rgba(200, 255, 0, 0.3);
+  }
+  .sticky-cta-info strong {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--fg);
+    margin-top: 0.15rem;
+    text-shadow: none;
+  }
+  .sticky-cta .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ========== SCROLL REVEAL ========== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-stagger.revealed > *:nth-child(1) { transition-delay: 0s; }
+  .reveal-stagger.revealed > *:nth-child(2) { transition-delay: 0.1s; }
+  .reveal-stagger.revealed > *:nth-child(3) { transition-delay: 0.15s; }
+  .reveal-stagger.revealed > *:nth-child(4) { transition-delay: 0.2s; }
+  .reveal-stagger.revealed > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ========== ANIMATIONS ========== */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes slideLeft {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    33% { transform: translate(15px, -15px) scale(1.03) rotate(1deg); }
+    66% { transform: translate(-10px, 10px) scale(0.97) rotate(-1deg); }
+  }
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 0.7; }
+  }
+
+  /* Paint animation */
+  .hero-p1 { animation: glow-pulse 4s ease-in-out infinite, float 14s ease-in-out infinite; }
+  .hero-p2 { animation: glow-pulse 5s ease-in-out infinite 1s, float 18s ease-in-out infinite reverse; }
+  .hero-p3 { animation: float 20s ease-in-out infinite 2s; }
+  .hero-p4 { animation: float 16s ease-in-out infinite 0.5s; }
+
+  /* ========== MOBILE HERO FIXES ========== */
+  @media (max-width: 767px) {
+    .hero-p1 {
+      opacity: 0.18;
+      box-shadow: 0 0 40px rgba(255, 45, 155, 0.2);
+    }
+    .hero-p2 {
+      opacity: 0.25;
+    }
+    .hero-title .line-artful {
+      -webkit-text-stroke-width: 2.5px;
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 1)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.9));
+    }
+  }
+
+  /* ========== COUNTDOWN PILL ========== */
+  .countdown-pill {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 45, 155, 0.3);
+    border-radius: 999px;
+    box-shadow: 0 0 12px rgba(255, 45, 155, 0.15);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards 1.2s;
+  }
+  .countdown-pill:hover {
+    border-color: rgba(255, 45, 155, 0.6);
+    box-shadow: 0 0 18px rgba(255, 45, 155, 0.3);
+  }
+  .countdown-pill .cd-label {
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .countdown-pill .cd-time {
+    color: var(--fg);
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+  .countdown-pill .cd-time span {
+    color: var(--neon-pink);
+    font-size: 0.65rem;
+  }
+  @media (max-width: 767px) {
+    .countdown-pill {
+      font-size: 0.65rem;
+      padding: 0.4rem 0.75rem;
+      gap: 0.35rem;
+    }
+    .countdown-pill .cd-time span {
+      font-size: 0.55rem;
+    }
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (min-width: 480px) {
+    body { font-size: 15px; }
+    .details-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (min-width: 768px) {
+    body { font-size: 16px; }
+    .hero { padding: 8rem 3rem; }
+    .section { padding: 4rem 3rem; }
+    .details-grid { grid-template-columns: repeat(4, 1fr); }
+    .hero-title .line-artful { -webkit-text-stroke-width: 3px; }
+    .lot-card { padding: 3rem 2.5rem; }
+    .sticky-cta { display: none; }
+    .marquee-text { font-size: 1.3rem; }
+  }
+
+  @media (min-width: 1024px) {
+    .hero { padding: 6rem 4rem; }
+    .hero-title .line-artful { font-size: 12rem; }
+    .hero-p1 { height: 200px; }
+    .hero-p2 { height: 280px; }
+  }
+
+  .has-sticky-cta { padding-bottom: 80px; }
+  @media (min-width: 768px) {
+    .has-sticky-cta { padding-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Countdown pill -->
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="paint hero-p1"></div>
+  <div class="paint hero-p2"></div>
+  <div class="paint hero-p3"></div>
+  <div class="paint hero-p4"></div>
+  <div class="paint hero-drip"></div>
+
+  <!-- Scattered dots -->
+  <div class="dot" style="width:12px;height:12px;background:var(--neon-pink);top:18%;right:25%;opacity:0.6;box-shadow:0 0 8px rgba(255,45,155,0.5);"></div>
+  <div class="dot" style="width:8px;height:8px;background:var(--neon-blue);top:70%;right:15%;opacity:0.5;box-shadow:0 0 6px rgba(0,212,255,0.5);"></div>
+  <div class="dot" style="width:6px;height:6px;background:var(--neon-green);top:45%;left:80%;opacity:0.5;box-shadow:0 0 6px rgba(200,255,0,0.5);"></div>
+  <div class="dot" style="width:10px;height:10px;background:var(--neon-orange);bottom:25%;left:12%;opacity:0.5;box-shadow:0 0 8px rgba(255,94,58,0.5);"></div>
+
+  <p class="hero-label">04.18.26 &middot; Thank You</p>
+
+  <h1 class="hero-title">
+    <div class="line-an">WHAT A</div>
+    <div class="line-artful">NIGHT</div>
+    <div class="line-affair">y'all!</div>
+  </h1>
+
+  <p class="hero-tagline">We Exceeded Our Goal</p>
+
+  <div class="hero-info">
+    Our community <strong>showed up and showed out</strong>.<br>
+    The vibes were immaculate. The paddles were flying.<br>
+    A massive thank you to every donor, volunteer, and paddle-raiser &mdash; y'all are rockstars.
+  </div>
+
+  <div class="hero-cta-wrap">
+    <a href="https://abernethyelementaryschool.betterworld.org/campaigns/buy-in-parties-2026" class="btn btn-primary" target="_blank" rel="noopener">
+      Buy-In Parties Still Open &rarr;
+    </a>
+    <a href="https://www.instagram.com/abernethypta" class="ig-link" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      Follow @abernethypta
+    </a>
+  </div>
+</header>
+
+<!-- ===== DOUBLE MARQUEE ===== -->
+<div class="marquee-wrap">
+  <div class="marquee marquee-1">
+    <div class="marquee-track">
+      <span class="marquee-text">THANK YOU &ensp;&#10038;&ensp; WHAT A NIGHT &ensp;&#10038;&ensp; GOAL EXCEEDED &ensp;&#10038;&ensp; PADDLES FLYING &ensp;&#10038;&ensp; VIBES IMMACULATE &ensp;&#10038;&ensp; ALL FOR THE KIDS &ensp;&#10038;&ensp;&ensp;</span>
+      <span class="marquee-text">THANK YOU &ensp;&#10038;&ensp; WHAT A NIGHT &ensp;&#10038;&ensp; GOAL EXCEEDED &ensp;&#10038;&ensp; PADDLES FLYING &ensp;&#10038;&ensp; VIBES IMMACULATE &ensp;&#10038;&ensp; ALL FOR THE KIDS &ensp;&#10038;&ensp;&ensp;</span>
+    </div>
+  </div>
+  <div class="marquee marquee-2" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-text">ABERNETHY &ensp;&#10038;&ensp; PORTLAND, OR &ensp;&#10038;&ensp; AN ARTFUL AFFAIR &ensp;&#10038;&ensp; 04.18.26 &ensp;&#10038;&ensp; BUY-IN PARTIES STILL OPEN &ensp;&#10038;&ensp; KIDS' NIGHT OUT &ensp;&#10038;&ensp;&ensp;</span>
+      <span class="marquee-text">ABERNETHY &ensp;&#10038;&ensp; PORTLAND, OR &ensp;&#10038;&ensp; AN ARTFUL AFFAIR &ensp;&#10038;&ensp; 04.18.26 &ensp;&#10038;&ensp; BUY-IN PARTIES STILL OPEN &ensp;&#10038;&ensp; KIDS' NIGHT OUT &ensp;&#10038;&ensp;&ensp;</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== WHY WE GATHER ===== -->
+<section class="why-section reveal">
+  <p class="why-headline">One night. One community. <em>All for our kids.</em></p>
+  <p class="why-body">Every dollar raised goes directly to enriching the lives of students at Abernethy Elementary. This is our biggest fundraiser of the year &mdash; and we're making it a night to remember.</p>
+</section>
+
+<!-- ===== BUY-IN PARTIES (POST-AUCTION) ===== -->
+<section class="section prizes-section">
+  <div class="paint prizes-p1"></div>
+  <div class="paint prizes-p2"></div>
+
+  <div class="section-content reveal">
+    <p class="section-label">Still Open</p>
+    <h2 class="section-title">Buy-in parties <em>are still on</em></h2>
+    <div class="divider"></div>
+  </div>
+
+  <p class="section-body reveal">
+    Didn't get in at the auction? You can still buy your spot. Parties stay open <strong style="color:var(--fg);">until each one happens</strong> &mdash; except Ms. Dunn's school-wide <strong style="color:var(--fg);">Kids' Night Out</strong>, which closes <strong style="color:var(--fg);">Thursday, April 24</strong>.
+  </p>
+
+  <div class="prize-tags reveal">
+    <a href="https://abernethyelementaryschool.betterworld.org/campaigns/buy-in-parties-2026" class="prize-tag" target="_blank" rel="noopener">Browse Buy-In Parties &rarr;</a>
+  </div>
+
+  <p class="section-body reveal" style="margin-top:2rem;font-size:0.9rem;">
+    <strong style="color:var(--fg);">Need financial assistance for Kids' Night Out?</strong> No worries &mdash; reach out to Ms. Dunn at <a href="mailto:mdunn2@pps.net" style="color:var(--neon-pink);border-bottom:1px solid rgba(255,45,155,0.3);">mdunn2@pps.net</a> so your child can join the fun.
+  </p>
+</section>
+
+<!-- ===== THE EVENING ===== -->
+<section class="section">
+  <div class="paint details-p1"></div>
+  <div class="paint details-p2"></div>
+
+  <div class="section-content reveal">
+    <p class="section-label">The Evening</p>
+    <h2 class="section-title">A night of community <em>&amp;</em> fundraising with a splatter of the arts</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="details-grid reveal reveal-stagger">
+    <div class="detail-card">
+      <p class="label">When</p>
+      <p class="value">Saturday<br>April 18</p>
+      <p class="note">5 PM &ndash; 10 PM</p>
+    </div>
+    <div class="detail-card">
+      <p class="label">What</p>
+      <p class="value">Dinner, Drinks<br>Fun &amp; Community</p>
+      <p class="note">Catered by <a href="https://porquenotacos.square.site/" target="_blank" rel="noopener" style="color:var(--neon-pink);border-bottom:1px solid rgba(255,45,155,0.3);">&iquest;Por Qu&eacute; No?!</a></p>
+    </div>
+    <div class="detail-card">
+      <p class="label">Who</p>
+      <p class="value">Adults Only</p>
+      <p class="note">Book your babysitters now!</p>
+    </div>
+    <div class="detail-card">
+      <p class="label">Fun</p>
+      <p class="value">Watercolor Portraits<br>Photobooth &middot; Wall of Wine<br>Poet in Residence</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE SPACE ===== -->
+<section class="section">
+  <div class="paint venue-p1"></div>
+
+  <div class="section-content reveal">
+    <p class="section-label">The Space</p>
+    <h2 class="section-title">A historic loft <em>on Division</em></h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="reveal">
+    <img src="venue.png" alt="1600 SE Division — industrial loft venue with factory-style windows" class="venue-img">
+  </div>
+
+  <p class="section-body reveal">
+    Built in the 1920s as a neighborhood commercial building, 1600 SE Division was reimagined in 2013&ndash;14 by Emerick Architects into an award-winning warehouse-style loft. The adaptive reuse kept the industrial bones while adding modern, net-zero design — think factory-style windows, exposed structure, and a wraparound roof terrace overlooking the city.
+  </p>
+
+  <div class="venue-details reveal">
+    <strong>1600 SE Division St</strong> &middot; Hosford-Abernethy, Portland<br>
+    Wraparound roof terrace &middot; Factory-style windows &middot; Net-zero building
+  </div>
+
+  <div class="venue-links reveal">
+    <a href="https://www.oregonlive.com/galleries/5IGXM7OEYNFWBH7FMM3OUHMQVQ/" class="btn btn-ghost" target="_blank" rel="noopener">OregonLive Gallery &rarr;</a>
+    <a href="https://www.emerick-architects.com/projects/division-street-2/" class="btn btn-ghost" target="_blank" rel="noopener">Emerick Architects &rarr;</a>
+  </div>
+</section>
+
+<!-- ===== DRESS CODE ===== -->
+<section class="section dresscode-section">
+  <div class="paint dress-p1"></div>
+  <div class="paint dress-p2"></div>
+
+  <div class="dresscode reveal">
+    <div class="dresscode-img-wrap" id="dresscodeEgg">
+      <img src="dresscode-vibe.png" alt="Colorful gallery party scene" class="dresscode-img">
+      <video class="dresscode-video" src="dresscode-vibe-anim.mp4" playsinline preload="none"></video>
+    </div>
+    <h3 class="dresscode-title">Gallery Glam</h3>
+    <p>Upscale attire with vibrant colors and artistic inspiration</p>
+  </div>
+</section>
+
+<!-- ===== DONORS ===== -->
+<section class="section">
+  <div class="section-content reveal">
+    <p class="section-label">Thank You</p>
+    <h2 class="section-title">Big love to our <em>86 business donors</em></h2>
+    <div class="divider"></div>
+    <div class="donor-cta">
+      <a href="mailto:auction@supportabernethy.org" class="btn btn-donor">Become a Business Donor</a>
+    </div>
+  </div>
+
+  <h3 class="donor-subheading donor-subheading--first reveal">Top Business Donors</h3>
+  <div class="major-donors reveal">
+    <a href="https://artofdrawers.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/art-of-drawers.png" alt="Art of Drawers"></a>
+    <a href="https://baxtersports.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/baxter-sports.png" alt="Baxter Sports"></a>
+    <a href="https://www.hammerlingwines.co/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/hammerling-wines.png" alt="Hammerling Wines"></a>
+    <a href="https://katiportland.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/kati-thai.svg" alt="Kati Thai"></a>
+    <a href="https://www.lalaphotographyportland.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/lala-photography.png" alt="Lala Photography PDX"></a>
+    <a href="https://www.lonefir.fitness/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/lone-fir-fitness.png" alt="Lone Fir Fitness"></a>
+    <a href="https://magic-smiles.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/magic-smiles.png" alt="Magic Smiles"></a>
+    <a href="https://www.mathnasium.com/math-centers/southeastportland" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/mathnasium.jpg" alt="Mathnasium of Southeast Portland"></a>
+    <a href="https://www.oregonjcc.org/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/mittleman-jcc.png" alt="Mittleman Jewish Community Center"></a>
+    <a href="https://nostrana.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/nostrana.png" alt="Nostrana"></a>
+    <a href="https://senestrarofamilyortho.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/senestraro.jpg" alt="Senestraro Orthodontics"></a>
+    <a href="https://www.skyhookbouldering.com/" class="major-donor-logo" target="_blank" rel="noopener"><img loading="lazy" src="logos/skyhook.svg" alt="Skyhook Bouldering"></a>
+  </div>
+
+  <h3 class="donor-subheading reveal">Business Contributors</h3>
+  <div class="donor-tags reveal">
+    <a href="https://www.afterglowpdx.com/" class="donor-tag" target="_blank" rel="noopener">Afterglow Pottery Studio</a>
+    <a href="https://artistsrep.org/" class="donor-tag" target="_blank" rel="noopener">Artists Repertory Theatre</a>
+    <a href="https://adrifthospitality.com/" class="donor-tag" target="_blank" rel="noopener">Ashore Hotel</a>
+    <a href="https://www.atlaspizzapdx.com/" class="donor-tag" target="_blank" rel="noopener">Atlas Pizza</a>
+    <a href="https://betsyandiya.com/" class="donor-tag" target="_blank" rel="noopener">Betsy &amp; Iya</a>
+    <a href="https://www.biking-buds.com/" class="donor-tag" target="_blank" rel="noopener">Biking Buds Summer Camp</a>
+    <span class="donor-tag">Bronca</span>
+    <a href="https://cargoinc.com/" class="donor-tag" target="_blank" rel="noopener">Cargo</a>
+    <a href="https://cstpdx.com/" class="donor-tag" target="_blank" rel="noopener">Clinton Street Theatre</a>
+    <a href="https://cwskate.com/" class="donor-tag" target="_blank" rel="noopener">Commonwealth Skate Shop</a>
+    <a href="https://www.crispsaladsnw.com/" class="donor-tag" target="_blank" rel="noopener">Crisp Salads</a>
+    <a href="https://www.denicolasitaliandining.com/" class="donor-tag" target="_blank" rel="noopener">DeNicolas</a>
+    <a href="https://www.ebandbean.com/" class="donor-tag" target="_blank" rel="noopener">Eb &amp; Bean</a>
+    <a href="https://www.experimentpdx.com/" class="donor-tag" target="_blank" rel="noopener">Experiment PDX</a>
+    <a href="https://www.farinabakery.com/" class="donor-tag" target="_blank" rel="noopener">Farina Bakery</a>
+    <a href="https://www.fifty-licks.com/" class="donor-tag" target="_blank" rel="noopener">Fifty Licks</a>
+    <a href="https://floaton.coop/" class="donor-tag" target="_blank" rel="noopener">Float On</a>
+    <a href="https://forpawspdx.com/" class="donor-tag" target="_blank" rel="noopener">For Paws</a>
+    <a href="https://www.thefrogpondfarm.com/" class="donor-tag" target="_blank" rel="noopener">Frog Pond Farm</a>
+    <a href="https://garnishapparel.com/" class="donor-tag" target="_blank" rel="noopener">Garnish Apparel</a>
+    <a href="https://www.giganticbrewing.com/" class="donor-tag" target="_blank" rel="noopener">Gigantic Brewing</a>
+    <a href="https://portland.heliumcomedy.com/" class="donor-tag" target="_blank" rel="noopener">Helium Comedy Club</a>
+    <a href="https://www.highergroundacu.com/" class="donor-tag" target="_blank" rel="noopener">Higher Ground Acupuncture</a>
+    <a href="https://hollywoodtheatre.org/" class="donor-tag" target="_blank" rel="noopener">Hollywood Theatre</a>
+    <a href="https://letshopscotch.com/" class="donor-tag" target="_blank" rel="noopener">Hopscotch</a>
+    <a href="https://icequeenyouscream.com/" class="donor-tag" target="_blank" rel="noopener">Ice Queen</a>
+    <a href="https://jordankentcamps.com/" class="donor-tag" target="_blank" rel="noopener">Jordan Kent Summer Camp</a>
+    <a href="https://www.kidsathearttoys.com/" class="donor-tag" target="_blank" rel="noopener">Kids at Heart</a>
+    <a href="https://kiln.com/communities/portland/" class="donor-tag" target="_blank" rel="noopener">Kiln</a>
+    <a href="https://mykingpins.com/" class="donor-tag" target="_blank" rel="noopener">KingPins Bowling</a>
+    <a href="https://www.lagomaesthetics.com/" class="donor-tag" target="_blank" rel="noopener">Lagom Functional Aesthetics</a>
+    <a href="https://lazydaysbrewing.com/" class="donor-tag" target="_blank" rel="noopener">Lazy Days Brewing</a>
+    <a href="https://www.mamahapa.com/" class="donor-tag" target="_blank" rel="noopener">Mama &amp; Hapa's Zero Waste Shop</a>
+    <a href="https://www.mcmenamins.com/" class="donor-tag" target="_blank" rel="noopener">McMenamins</a>
+    <a href="https://milagro.org/" class="donor-tag" target="_blank" rel="noopener">Milagro Theatre</a>
+    <a href="https://www.morningceramics.com/" class="donor-tag" target="_blank" rel="noopener">Morning Ceramics Studio</a>
+    <a href="https://www.mothersbistro.com/" class="donor-tag" target="_blank" rel="noopener">Mother's Bistro</a>
+    <a href="https://newcascadiatraditional.com/" class="donor-tag" target="_blank" rel="noopener">New Cascadia Bakery</a>
+    <a href="https://www.nextlevelvg.com/" class="donor-tag" target="_blank" rel="noopener">Next Level Burger</a>
+    <a href="https://nwcts.org/" class="donor-tag" target="_blank" rel="noopener">Northwest Children's Theater</a>
+    <a href="https://nwescapeexperience.com/" class="donor-tag" target="_blank" rel="noopener">NW Escape Experience</a>
+    <a href="https://oakknollwinery.com/" class="donor-tag" target="_blank" rel="noopener">Oak Knoll Winery</a>
+    <a href="https://www.oakspark.com/" class="donor-tag" target="_blank" rel="noopener">Oaks Park</a>
+    <a href="https://www.orangetheory.com/" class="donor-tag" target="_blank" rel="noopener">Orangetheory Fitness</a>
+    <a href="https://www.ocbeerco.com/" class="donor-tag" target="_blank" rel="noopener">Oregon City Brewing</a>
+    <a href="https://oseiduro.com/" class="donor-tag" target="_blank" rel="noopener">Osei-Duro</a>
+    <a href="https://www.owlandbeeclaycompany.com/" class="donor-tag" target="_blank" rel="noopener">Owl &amp; Bee Clay Company</a>
+    <a href="https://thepeoplescourts.com/" class="donor-tag" target="_blank" rel="noopener">People's Courts</a>
+    <a href="https://www.pfriembeer.com/" class="donor-tag" target="_blank" rel="noopener">pFriem</a>
+    <a href="https://www.pizzeriaotto.com/" class="donor-tag" target="_blank" rel="noopener">Pizzeria Otto Foster</a>
+    <a href="https://plumperfarms.com/" class="donor-tag" target="_blank" rel="noopener">Plumper Pumpkin Farm</a>
+    <a href="https://porquenotacos.square.site/" class="donor-tag" target="_blank" rel="noopener">&iquest;Por Qu&eacute; No?!</a>
+    <a href="https://www.pdxinsectarium.org/" class="donor-tag" target="_blank" rel="noopener">Portland Insectarium</a>
+    <a href="https://www.portlandleathergoods.com/" class="donor-tag" target="_blank" rel="noopener">Portland Leather Goods</a>
+    <a href="https://www.portlandnursery.com/" class="donor-tag" target="_blank" rel="noopener">Portland Nursery</a>
+    <a href="https://www.portlandpicklesbaseball.com/" class="donor-tag" target="_blank" rel="noopener">Portland Pickles Baseball</a>
+    <a href="https://ripcity.gleague.nba.com/" class="donor-tag" target="_blank" rel="noopener">Rip City Remix</a>
+    <a href="https://www.schoolofrock.com/" class="donor-tag" target="_blank" rel="noopener">School of Rock</a>
+    <a href="https://sheboptheshop.com/" class="donor-tag" target="_blank" rel="noopener">SheBop</a>
+    <a href="https://www.sortnsell.com/" class="donor-tag" target="_blank" rel="noopener">Sort &amp; Sell</a>
+    <a href="https://thesportsbraofficial.com/" class="donor-tag" target="_blank" rel="noopener">Sports Bra</a>
+    <a href="https://www.stepspdx.com/" class="donor-tag" target="_blank" rel="noopener">STEPS PDX</a>
+    <a href="https://www.stollerwinegroup.com/" class="donor-tag" target="_blank" rel="noopener">Stoller Wine Group</a>
+    <a href="https://www.studioonetheater.com/" class="donor-tag" target="_blank" rel="noopener">Studio One Theaters</a>
+    <a href="https://www.studio45.com/" class="donor-tag" target="_blank" rel="noopener">Studio45</a>
+    <a href="https://www.thebymc.com/" class="donor-tag" target="_blank" rel="noopener">The Bhakti Yoga Movement Center</a>
+    <a href="https://www.thehangoutpdx.com/" class="donor-tag" target="_blank" rel="noopener">The Hangout PDX</a>
+    <a href="https://www.themudroompdx.com/" class="donor-tag" target="_blank" rel="noopener">The Mud Room</a>
+    <a href="https://www.thepaladinsleague.com/" class="donor-tag" target="_blank" rel="noopener">The Paladins League</a>
+    <a href="https://theperfumehouse.com/" class="donor-tag" target="_blank" rel="noopener">The Perfume House</a>
+    <a href="https://thirdrailrep.org/" class="donor-tag" target="_blank" rel="noopener">Third Rail Repertory Theatre</a>
+    <a href="https://www.thriftbooks.com/" class="donor-tag" target="_blank" rel="noopener">Thriftbooks</a>
+    <a href="https://topgolf.com/" class="donor-tag" target="_blank" rel="noopener">Top Golf</a>
+    <a href="https://www.wvv.com/" class="donor-tag" target="_blank" rel="noopener">Willamette Valley Vineyards</a>
+  </div>
+
+</section>
+
+<!-- ===== VOLUNTEER ===== -->
+<section class="section volunteer-section">
+  <div class="paint volunteer-p1"></div>
+
+  <div class="volunteer-box reveal">
+    <p class="section-label" style="text-align:center;">Gratitude</p>
+    <h2 class="section-title" style="text-align:center;font-size:clamp(1.5rem,4vw,2.5rem);">Thank you to our volunteers</h2>
+    <p>Bartenders, paddle distributors, photographers, live auction support, cleanup crew &mdash; you showed up and made this night happen. We couldn't have done it without you.</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p class="footer-label">Your Auction Committee</p>
+  <p class="footer-names">
+    Britt Windler &middot; Rachel Hammerling<br>
+    Richelle Sandoval &middot; Aaron Stoertz &middot; Peter McKay
+  </p>
+  <p class="footer-email">
+    <a href="mailto:auction@supportabernethy.org">auction@supportabernethy.org</a>
+  </p>
+  <p class="footer-ig">
+    <a href="https://www.instagram.com/abernethypta" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      @abernethypta
+    </a>
+  </p>
+  <p class="footer-school">Abernethy Elementary School &middot; Portland, Oregon</p>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-info">
+    Still Open
+    <strong>Buy-In Parties</strong>
+  </div>
+  <a href="https://abernethyelementaryschool.betterworld.org/campaigns/buy-in-parties-2026" class="btn btn-primary" target="_blank" rel="noopener">Sign Up</a>
+</div>
+
+<script>
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('revealed');
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Sticky CTA (mobile)
+  const stickyCta = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  if (stickyCta && hero) {
+    const stickyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          stickyCta.classList.add('visible');
+          document.body.classList.add('has-sticky-cta');
+        } else {
+          stickyCta.classList.remove('visible');
+          document.body.classList.remove('has-sticky-cta');
+        }
+      });
+    }, { threshold: 0 });
+    stickyObserver.observe(hero);
+  }
+
+  // Easter egg: neon flicker on Gallery Glam title
+  (() => {
+    const title = document.querySelector('.dresscode-title');
+    if (!title) return;
+    title.addEventListener('click', () => {
+      if (title.classList.contains('neon-buzz')) return;
+      title.classList.add('neon-buzz');
+      title.addEventListener('animationend', () => {
+        title.classList.remove('neon-buzz');
+      }, { once: true });
+    });
+  })();
+
+  // Easter egg: animated image on dresscode image tap
+  (() => {
+    const wrap = document.getElementById('dresscodeEgg');
+    if (!wrap) return;
+    const video = wrap.querySelector('.dresscode-video');
+    let playing = false;
+
+    // Preload video when section scrolls into view
+    const preloadObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        video.preload = 'auto';
+        preloadObserver.disconnect();
+      }
+    }, { rootMargin: '200px' });
+    preloadObserver.observe(wrap);
+
+    wrap.addEventListener('click', () => {
+      if (playing) return;
+      playing = true;
+      video.currentTime = 0;
+      video.play().then(() => {
+        video.classList.add('playing');
+      });
+    });
+
+    video.addEventListener('ended', () => {
+      video.classList.remove('playing');
+      playing = false;
+    });
+  })();
+</script>
+
+</body>
+</html>
