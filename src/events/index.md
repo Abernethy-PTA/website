@@ -20,7 +20,7 @@ PTA events bring the Abernethy community together all year — and many power th
 | Holiday Shoppe | Friday–Saturday, December 11–12, 2026 |
 | Fun(d) Run | Thursday, March 11, 2027 |
 | [Abernethy Auction](https://auction.supportabernethy.org) | Saturday, April 3, 2027 |
-| [Carnival](https://carnival.supportabernethy.org) | Friday, May 14, 2027 |
+| [Carnival](https://carnival.supportabernethy.org) | Friday, May 21, 2027 |
 
 ## The lineup
 
