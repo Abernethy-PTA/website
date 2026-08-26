@@ -22,6 +22,8 @@ Abernethy sends 5–6 volunteers to the PPS PTA Clothing Center to help families
 - **Monday, September 14, 2026**
 - **Monday, January 11, 2027**
 
+Volunteers come from **9:30am–1:30pm** — this gives time for a quick orientation before families arrive to receive clothing, and some time after to tidy up. Families shop for their students from **10:00am–1:00pm**.
+
 Sign up on [Konstella](https://www.konstella.com/p/abernethy). The Clothing Center has moved to **Room A-21 at the Marshall Campus**, which has its own outside door: enter the campus from SE 92nd & Powell, head straight back past the three dumpsters and the loading dock, and look just behind the brick outcrop building — the door is to the right of the locked double doors, next to a faded orange roll-up door and a metal vent (it's yellow with a sign when open, plus a sidewalk sign). Heads up for volunteers: per the new PPS lease, families receiving clothing may not use the school restrooms — volunteers may.
 
 ## Donate
