@@ -18,8 +18,6 @@ Here's the fall lineup of on-campus after school enrichment programs at Aberneth
 
 <div id="as-details"><p><em>Loading program details…</em></p></div>
 
-Providers interested in operating at Abernethy: apply via [Facilitron](https://www.facilitron.com/aks97214).
-
 <style>
 /* break out of the narrow content column so the full week fits on desktop */
 .as-scroll { overflow-x: auto; margin: 0.5rem 0 1.5rem; width: min(65.5rem, calc(100vw - 2.5rem)); }
