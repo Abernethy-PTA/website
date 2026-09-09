@@ -71,4 +71,4 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 | Social Media | Lauren McCune |
 | Spirit Wear | Ashley Cernell, Dani Loureiro |
 | Staff/Teacher Appreciation | Open — volunteer! |
-| Yearbook | Rachel Torchia, Ashley Cernell, Stacey Milton |
+| Yearbook | Stacey Milton, Rachel Torchia, Ashley Cernell |
