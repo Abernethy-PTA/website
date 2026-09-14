@@ -26,6 +26,6 @@ Got funds heading to the bank? Contact Alice Graham — [deposits@supportabernet
 
 The budget is approved by the membership as a fundraising goal. Spending increases require a Membership vote at a Community Meeting; reallocations (up to 10% of the goal) require a Board vote. To propose a change, submit a funding request to the Executive Committee via the Treasurer: Elise Parker — [treasurer@supportabernethy.org](mailto:treasurer@supportabernethy.org)
 
-All Officers and Committee Chairs carry fiduciary responsibility — see the Financial Essentials chapter of the [Oregon PTA Leader's Manual](https://www.oregonpta.org/pta-leaders/treasurer-resources). If something seems wrong, contact the Treasurer or the Oregon PTA state office.
+All Officers and Committee Chairs carry fiduciary responsibility — see the Financial Essentials chapter of the [Oregon PTA Leader's Manual](https://www.oregonpta.com/pta-leaders/treasurer-resources). If something seems wrong, contact the Treasurer or the Oregon PTA state office.
 
 <small>Past budgets and annual reports are in the [records archive](/archive/).</small>

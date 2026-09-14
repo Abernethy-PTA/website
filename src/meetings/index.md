@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 5
 ---
 
-**Community Meetings** are typically the **third Thursday of the month, 6:30–8:00pm** in the Abernethy Auditorium with a Zoom option — **free childcare provided!** Everyone is welcome; you need to be a [PTA member](https://www.oregonpta.org/membership/joinnow/16880) (signed up at least 48 hours ahead) and present in person or online to vote.
+**Community Meetings** are typically the **third Thursday of the month, 6:30–8:00pm** in the Abernethy Auditorium with a Zoom option — **free childcare provided!** Everyone is welcome; you need to be a [PTA member](https://www.oregonpta.com/membership/joinnow/16880) (signed up at least 48 hours ahead) and present in person or online to vote.
 
 **Board Meetings** are typically the **first Thursday of the month, 6:30–7:30pm** via Zoom. Board business only — contact [presidents@supportabernethy.org](mailto:presidents@supportabernethy.org) to attend.
 

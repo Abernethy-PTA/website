@@ -26,7 +26,7 @@ Older PTA records, kept for reference. For current agendas, minutes, and budgets
 
 ## Treasurer resources
 - [Abernethy PTA Treasurer Duties and Desk Manual](https://docs.google.com/spreadsheets/d/1yQ4RaQdWu9kptOznM6oZySs62IVgf5YFmQ3Xd1avc8U)
-- [Oregon PTA Leader's Manual (full PDF)](https://www.oregonpta.org/assets/pages/files/Full_Officers_Manual_2021-20222.pdf)
+- [Oregon PTA Leader's Manual (full PDF)](https://www.oregonpta.com/assets/pages/files/Full_Officers_Manual_2021-20222.pdf)
 - [Cash Counting Worksheet](https://drive.google.com/file/d/1FxojSpMhhr9s_ZZQS_JUr77JT6f9w6de) (still linked on the Finance page)
 
 ## Meeting agendas & minutes, 2015–2026
@@ -107,9 +107,9 @@ Older PTA records, kept for reference. For current agendas, minutes, and budgets
 
 ## 2021–22
 
-- **Aug 31, 2021 — COVID Protocol Meeting:** [Video](https://youtu.be/if34bBW4nmY)
+- **Aug 31, 2021 — COVID Protocol Meeting:** video no longer available
 - **Sep 9, 2021 — Board:** [Agenda](https://docs.google.com/document/d/16vjMhhhbrEHs6zXqJkU1uWadwiVskAUW/edit?usp=sharing&ouid=108121604906491848302&rtpof=true&sd=true) · [Minutes](https://drive.google.com/file/d/1X-CGr0cxMNJuLtUcEgoQOW5DRkGHh65E/view?usp=sharing)
-- **Sep 23, 2021 — Community:** [Agenda](https://drive.google.com/file/d/10HpxsqH_T84HtbEtnM37W6GK3cCH4coF/view?usp=sharing) · [Minutes](https://drive.google.com/file/d/1FjJ1O75XlMXgtU4SxQoCclHhONb_cwR5/view?usp=sharing) · [Video](https://www.youtube.com/watch?v=8pzVZQkenB4)
+- **Sep 23, 2021 — Community:** [Agenda](https://drive.google.com/file/d/10HpxsqH_T84HtbEtnM37W6GK3cCH4coF/view?usp=sharing) · [Minutes](https://drive.google.com/file/d/1FjJ1O75XlMXgtU4SxQoCclHhONb_cwR5/view?usp=sharing)
 - **Oct 7, 2021 — Board:** [Agenda](https://drive.google.com/file/d/1mkQYWrSDT6iEYRVyltxqm_U8LB1JTbh2/view?usp=sharing) · [Minutes](https://drive.google.com/file/d/1-bSEHO5Xto6SbH9wo67oHqYzDlXK_ko8/view?usp=sharing)
 - **Oct 21, 2021 — Community:** [Agenda](https://drive.google.com/file/d/1HCawHdqWz4Q_ISbNzRVNnl1ZqWI8WDD0/view?usp=sharing) · [Minutes](https://drive.google.com/file/d/1EUW38EGUAmbLEs25YcA0Mh7cky11SErA/view?usp=sharing)
 - **Nov 4, 2021 — Board:** [Agenda](https://drive.google.com/file/d/1GKpd3JqD2qnGaUzgWCYZSbZYkbB8A2rg/view?usp=sharing) · [Minutes](https://drive.google.com/file/d/1yBktF0RrKK7KCFA4Oq2n7m3D2cpSfWpj/view?usp=sharing)

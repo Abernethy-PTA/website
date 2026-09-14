@@ -1,0 +1,33 @@
+# Link checker config for `npm run build` output. Run by .github/workflows/links.yml.
+# Local run: brew install lychee && npm run build && lychee --config .lychee.toml --root-dir "$PWD/_site" "_site/**/*.html"
+
+# Be polite to shared hosts and give slow sites a chance
+max_concurrency = 8
+timeout = 30
+retry_wait_time = 3
+max_retries = 3
+
+# Look like a browser; several sites (PPS, Google support, ticketing) 403 plain bots
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36 supportabernethy-linkcheck"
+
+# 2xx OK. 401 = private Google Doc (exists, board-only). 403/429 = bot wall or rate limit. 999 = LinkedIn.
+accept = ["200..=206", "401", "403", "429", "999"]
+
+# Only these schemes count as links to check
+scheme = ["https", "http"]
+
+# Skip (mailto: is excluded by default)
+include_mail = false
+exclude = [
+  # preconnect hints, not pages
+  "^https://fonts\\.googleapis\\.com/?$",
+  "^https://fonts\\.gstatic\\.com/?$",
+  # social platforms block all automated requests
+  "facebook\\.com",
+  "instagram\\.com",
+  "tiktok\\.com",
+  "linkedin\\.com",
+  # WAFs that drop non-browser TLS connections entirely
+  "fredmeyer\\.com",
+  "bottledrop\\.com",
+]

@@ -23,9 +23,9 @@ To register you'll need:
 
 - Proof of age (birth certificate or similar)
 - Two documents showing proof of home address (utility, mobile, or other recent bills in a parent's name)
-- [Immunization records](https://www.multnomahesd.org/shs-immunization.html)
+- [Immunization records](https://www.multnomahesd.org/services/shs/immunization)
 
-Start here: [PPS kindergarten info](https://www.pps.net/kindergarten) · [Enrollment](https://www.pps.net/Page/2899) · [Registration form](https://www.pps.net/Page/2381). Registration packets are also available in the school's main office.
+Start here: [PPS kindergarten info](https://www.pps.net/connect-to-k) · [Enrollment](https://www.pps.net/Page/2899) · [Registration form](https://www.pps.net/departments/enrollment-transfer/enroll/enroll-english/enroll-at-pps). Registration packets are also available in the school's main office.
 
 ## After school programs
 
@@ -36,6 +36,6 @@ See the [fall schedule of enrichment programs at Abernethy](/programs/after-scho
 The nation's first parent group in schools, working for kids for over 100 years. Membership gives you a voice and a vote on the budget and big decisions — and it's a great way to get to know teachers, staff, and other parents.
 
 <div class="btn-row">
-  <a class="btn btn-tomato" href="https://www.oregonpta.org/membership/joinnow/16880">Become a PTA Member</a>
+  <a class="btn btn-tomato" href="https://www.oregonpta.com/membership/joinnow/16880">Become a PTA Member</a>
   <a class="btn" href="https://www.konstella.com/p/abernethy">Join Konstella</a>
 </div>

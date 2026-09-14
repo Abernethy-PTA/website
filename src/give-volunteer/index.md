@@ -12,7 +12,7 @@ The PTA runs on volunteer time and community generosity. Both are welcome in any
 ## Become a volunteer — three steps
 
 1. **[Get a background check](https://www.pps.net/volunteer)** — a five-minute online form, required before volunteering in the building (including field trips!). Wait for the PPS approval email.
-2. **[Join the PTA](https://www.oregonpta.org/membership/joinnow/16880)** — optional, but it lets you vote at Community Meetings and covers you with insurance for Bike Bus corking, sweeping, or leading.
+2. **[Join the PTA](https://www.oregonpta.com/membership/joinnow/16880)** — optional, but it lets you vote at Community Meetings and covers you with insurance for Bike Bus corking, sweeping, or leading.
 3. **[Join Konstella](https://www.konstella.com/p/abernethy)** — where every volunteer opportunity is posted. It's the place to be!
 
 ## PTA Clothing Center volunteer days

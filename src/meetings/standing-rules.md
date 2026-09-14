@@ -10,7 +10,7 @@ eleventyNavigation:
 
 **National PTA #:** 016880 · **Council affiliation:** Portland
 
-The Abernethy PTA is affiliated with the National PTA and the Oregon PTA and as such is governed by the [National PTA Bylaws](http://www.pta.org/home/About-National-Parent-Teacher-Association/Governance/National-PTA-Bylaws) and the [Oregon PTA State, Council, and Local Unit Bylaws](https://www.oregonpta.org/assets/pages/files/Oregon_Bylaws_2024.pdf).
+The Abernethy PTA is affiliated with the National PTA and the Oregon PTA and as such is governed by the [National PTA Bylaws](http://www.pta.org/home/About-National-Parent-Teacher-Association/Governance/National-PTA-Bylaws) and the [Oregon PTA State, Council, and Local Unit Bylaws](https://www.oregonpta.com/assets/pages/files/Oregon_Bylaws_2024.pdf).
 
 ## Mission
 
