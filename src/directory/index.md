@@ -70,5 +70,5 @@ Meredith Barrett, Stuart Long, Julia Barrett, Lauren McCune
 | New Family Connections | Quinn Keogh |
 | Social Media | Lauren McCune |
 | Spirit Wear | Ashley Cernell, Dani Loureiro |
-| Staff/Teacher Appreciation | Open — volunteer! |
+| Staff/Teacher Appreciation | Beth Koh |
 | Yearbook | Stacey Milton, Rachel Torchia, Ashley Cernell |
