@@ -40,5 +40,6 @@ The **[Abernethy Century Campaign](/give/)** is raising $50K to fund the centenn
 - **[BottleDrop](/give-volunteer/bottledrop/)** — grab a blue bag from the front office or request home delivery, fill it with redeemables, and drop it at any BottleDrop site. Over $5,500 raised so far.
 - **[Fred Meyer Community Rewards](https://www.fredmeyer.com/communityrewards)** — link your card to Abernethy (code **SG119**); costs you nothing.
 - **[Box Tops for Education](https://www.boxtops4education.com/s/how-to-earn)** — scan receipts in the app within 14 days.
+- **[ParentKind](https://beparentkind.com)** — Easily donate your outgrown kids' clothes and fund our PTA at the same time! ParentKind offers free porch pickup in SE Portland. Choose Abernethy as your school and when your clothes sell in ParentKind's online store, a meaningful percentage goes to our PTA.
 
 **Wanted: grant writer!** Help us bring in funds from outside our community — [fundraising@supportabernethy.org](mailto:fundraising@supportabernethy.org)
