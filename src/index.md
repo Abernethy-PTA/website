@@ -19,6 +19,9 @@ eleventyNavigation:
 
 <section class="home-section">
   <div class="wrap">
+    <div class="notice">
+      <strong>Keep Abernethy Open.</strong> PPS may close up to 20 schools at the end of this school year. <a href="/rightsizing/">Learn what’s happening and take action →</a>
+    </div>
     <h2>Find your way in</h2>
     <ul class="home-cards">
       <li><a href="/programs/after-school/"><strong>After School Programs</strong><span>The fall enrichment schedule — music, art, sports, science, and more.</span></a></li>

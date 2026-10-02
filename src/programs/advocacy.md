@@ -7,6 +7,10 @@ eleventyNavigation:
   order: 3
 ---
 
+<div class="notice">
+  <strong>Keep Abernethy Open.</strong> PPS may close up to 20 schools at the end of this school year. <a href="/rightsizing/">Learn what’s happening and take action →</a>
+</div>
+
 Abernethy students and families have the power to make a positive difference in their world. The PTA’s advocacy efforts are all about empowering our community to use their power and raise their voices for change!
 
 Use this website to learn about advocacy through the Abernethy PTA: How you can get involved and make your advocacy effective.

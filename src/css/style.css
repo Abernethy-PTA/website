@@ -270,6 +270,8 @@ body {
   margin: 1.5rem 0;
 }
 
+.notice a { color: var(--orange-deep); font-weight: 600; }
+
 /* ----- page chrome ----- */
 
 .page { padding: 2.25rem 0 3.5rem; }
