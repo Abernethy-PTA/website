@@ -274,7 +274,7 @@ body {
 
 /* ----- page chrome ----- */
 
-.page { padding: 2.25rem 0 3.5rem; }
+.page { padding-top: 2.25rem; padding-bottom: 3.5rem; }
 
 .breadcrumb {
   font-size: 0.9rem;

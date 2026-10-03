@@ -33,7 +33,7 @@ Every family at Abernethy will be impacted by this process differently, and ever
 ## Important dates
 
 - **Tuesday, October 6, 6–8 pm, [501 N. Dixon Street, Portland, OR 97227](https://www.google.com/maps/search/501+N.+Dixon+Street,+Portland,+OR+97227):** A crucial PPS Board meeting where the district will share closure scenarios with the board.
-- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** PTA community meeting, where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom.
+- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** PTA community meeting, where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
 
 ## Our goal
 
