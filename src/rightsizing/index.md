@@ -33,6 +33,8 @@ Your PTA is following rightsizing so that we can empower our community to speak 
 
 Every family at Abernethy will be impacted by this process differently, and every person has the right to speak out from their experience and needs. The PTA is here to offer options for you to share your voice and ways to weigh in on what our collective voice as a PTA will be about rightsizing.
 
+It’s important that we make our voices heard now, while the district is still considering its options. A personal email to the school board lets them know how much Abernethy means to our families and community and ensures they hear directly from the people who will be most affected by this decision. Every message helps demonstrate that keeping Abernethy open matters to our community.
+
 - **Send an individual email to board members** ([template provided](https://docs.google.com/document/d/1sTqZhn--SFJgj76foELB0Y2w_lEixMCrHkhIzuCnxTo/edit?usp=sharing)) telling them what you love about Abernethy.
 - **Complete the [PPS survey](https://docs.google.com/forms/d/e/1FAIpQLSfIUOUJ8im4W9-t_-fLMf2hhhRxXMszLjFm0W1krEYT3hqVDg/viewform)** to give feedback on the district’s plans.
 - **Review the draft of our Abernethy PTA community letter** (coming soon), and submit your comments for improvements before the October 15 PTA community meeting. We want our collective voice to reflect the needs of each and every one of us.
