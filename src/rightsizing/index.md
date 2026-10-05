@@ -7,7 +7,7 @@ description: PPS "rightsizing" may close up to 20 schools. Learn what's happenin
 
 “Rightsizing” is coming to Portland Public Schools. This is the term the district is using for potential school closures and consolidation. This moment is the result of trends over years: declining enrollment plus school funding that is not keeping pace with school needs.
 
-As a result, PPS may close up to 20 of its 81 middle and elementary schools at the end of this school year. That’s 1 in 4 schools. We will know the district’s closure scenarios on **October 6.**
+As a result, PPS may close up to 20 of its 81 middle and elementary schools at the end of this school year. We will know the district’s closure scenarios on **October 6.**
 
 ## Our goal
 
@@ -21,7 +21,7 @@ The Abernethy PTA aligns with other PPS communities in demanding a methodical, t
 
 ## 2. Connect with your community
 
-Your PTA is following rightsizing so that we can empower our community to speak out. The Abernethy PTA is here to stand up for Abernethy students.
+Being part of our school community is essential, because every student and every family matters in shaping what Abernethy is. Your PTA is following rightsizing so that we can empower our community to speak out. The Abernethy PTA is here to stand up for Abernethy students.
 
 - **Volunteer in your kid’s classroom.** Showing up for our kids now provides stability for them and reminds us why we care so much about Abernethy’s future.
 - **Attend an Abernethy meeting or event.** Plug into the programming that makes Abernethy such a vital place and learn what’s happening. [PTA community meetings](https://supportabernethy.org/meetings/) are held both in-person and virtually.
@@ -39,10 +39,12 @@ It’s important that we make our voices heard now, while the district is still 
 - **Complete the [PPS survey](https://docs.google.com/forms/d/e/1FAIpQLSfIUOUJ8im4W9-t_-fLMf2hhhRxXMszLjFm0W1krEYT3hqVDg/viewform)** to give feedback on the district’s plans.
 - **Review the draft of our Abernethy PTA community letter** (coming soon), and submit your comments for improvements before the October 15 PTA community meeting. We want our collective voice to reflect the needs of each and every one of us.
 
+*Want inspiration?* A few Abernethy parents wrote [this awesome letter](https://www.oregonlive.com/opinion/2026/10/readers-respond-all-portlanders-affected-by-school-closures.html) published in the Oregonian on October 4.
+
 ## Important dates
 
 - **Tuesday, October 6, 6–8 pm, [501 N. Dixon Street, Portland, OR 97227](https://www.google.com/maps/search/501+N.+Dixon+Street,+Portland,+OR+97227):** A crucial PPS Board meeting where the district will share closure scenarios with the board.
-- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** PTA community meeting, where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
+- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** [PTA community meeting](https://supportabernethy.org/meetings/), where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
 
 ## The action we want to see from our PPS leaders and lawmakers
 
