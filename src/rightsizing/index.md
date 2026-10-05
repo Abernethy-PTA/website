@@ -16,7 +16,7 @@ The Abernethy PTA aligns with other PPS communities in demanding a methodical, t
 ## 1. Learn what’s happening
 
 - **See [what PPS is sharing](https://www.pps.net/about/portland-public-schools-information/rightsize/rightsize)** about its plans for rightsizing.
-- **Educate yourself.** This [community-made PPS Dashboard](https://ppsdata.info/) shows how closure might affect different schools across our city. [This PPS map](https://drive.google.com/file/d/1I4Vh8XCyjGLafcE2KQ4pRaIB6iyoOkv9/view?usp=drive_link) shows building utilization across the district. Utilization is how efficiently and effectively schools use their buildings relative to their student capacity (ex: are buildings overcrowded, underused, or right-sized?) It's one of the factors district leaders will consider. 
+- **Educate yourself.** This [community-made PPS Dashboard](https://ppsdata.info/) shows how closure might affect different schools across our city. [This PPS map](https://drive.google.com/file/d/1I4Vh8XCyjGLafcE2KQ4pRaIB6iyoOkv9/view?usp=drive_link) shows building utilization across the district. Utilization is how efficiently and effectively schools use their buildings relative to their student capacity (ex: are buildings overcrowded, underused, or right-sized?). It’s one of the factors district leaders will consider.
 - **Follow updates** in Principal Dunn’s weekly newsletter and on [Konstella](https://www.konstella.com/p/abernethy), the PTA’s app for connecting directly with families.
 
 ## 2. Connect with your community
@@ -42,13 +42,12 @@ Every family at Abernethy will be impacted by this process differently, and ever
 - **Tuesday, October 6, 6–8 pm, [501 N. Dixon Street, Portland, OR 97227](https://www.google.com/maps/search/501+N.+Dixon+Street,+Portland,+OR+97227):** A crucial PPS Board meeting where the district will share closure scenarios with the board.
 - **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** PTA community meeting, where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
 
-
 ## The action we want to see from our PPS leaders and lawmakers
 
 - **A clear pathway for accountability at the state and local level**
     - Recent events (e.g., damning audit results about the high school renovation contracts) have inspired a lack of faith in our public school leadership.
     - Changing messages from district leaders cause us to question the transparency of this process.
-  - **A strategic plan around the impact of PPS school closures** on:
+- **A strategic plan around the impact of PPS school closures** on:
     - Students: class sizes, resources, academic development, etc.
     - Schools: funding remodels and renovations, selling assets, etc.
     - Communities: how PPS will work with community partners to fill the gaps that school buildings leave behind
