@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/**/*.pdf");
 
   // Standalone event sites (migrated from their own repos/subdomains).
   // Copied verbatim — their HTML must not be run through the template engine.

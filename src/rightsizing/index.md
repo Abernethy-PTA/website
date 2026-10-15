@@ -1,21 +1,23 @@
 ---
-title: Keep Abernethy Open
-description: PPS "rightsizing" may close up to 20 schools. Learn what's happening, connect with the Abernethy PTA, and take action.
+title: Abernethy and Rightsizing
+description: PPS "rightsizing" may close up to 14 schools. Learn what's happening, connect with the Abernethy PTA, and take action.
 ---
 
 ## What this is about
 
 “Rightsizing” is coming to Portland Public Schools. This is the term the district is using for potential school closures and consolidation. This moment is the result of trends over years: declining enrollment plus school funding that is not keeping pace with school needs.
 
-As a result, PPS may close up to 20 of its 81 middle and elementary schools at the end of this school year. We will know the district’s closure scenarios on **October 6.**
-
 ## Our goal
 
-The Abernethy PTA aligns with other PPS communities in demanding a methodical, transparent approach to district rightsizing and calls on PPS to preserve Abernethy as a neighborhood elementary school.
+The Abernethy PTA aligns with other PPS communities in demanding a methodical, transparent, accountable approach to district rightsizing. We want what's best for Abernethy students and all PPS students. Abernethy is a strong neighborhood school and we want to see it stay strong into the future.
 
 ## 1. Learn what’s happening
 
+PPS has released its potential scenarios to close schools and relocate programs.
+
 - **See [what PPS is sharing](https://www.pps.net/about/portland-public-schools-information/rightsize/rightsize)** about its plans for rightsizing.
+- **Review [the PPS family guide for Abernethy](/rightsizing/pps-family-guide-abernethy.pdf)** (PDF) showing the proposed changes and their direct impact on our school.
+- **Watch the [PPS Board's meeting](https://www.youtube.com/watch?v=zOUH2Jq7Owo)** when they heard details of the district's proposals and started discussion.
 - **Educate yourself.** This [community-made PPS Dashboard](https://ppsdata.info/) shows how closure might affect different schools across our city. [This PPS map](https://drive.google.com/file/d/1I4Vh8XCyjGLafcE2KQ4pRaIB6iyoOkv9/view?usp=drive_link) shows building utilization across the district. Utilization is how efficiently and effectively schools use their buildings relative to their student capacity (ex: are buildings overcrowded, underused, or right-sized?). It’s one of the factors district leaders will consider.
 - **Follow updates** in Principal Dunn’s weekly newsletter and on [Konstella](https://www.konstella.com/p/abernethy), the PTA’s app for connecting directly with families.
 
@@ -33,18 +35,17 @@ Being part of our school community is essential, because every student and every
 
 Every family at Abernethy will be impacted by this process differently, and every person has the right to speak out from their experience and needs. The PTA is here to offer options for you to share your voice and ways to weigh in on what our collective voice as a PTA will be about rightsizing.
 
-It’s important that we make our voices heard now, while the district is still considering its options. A personal email to the school board lets them know how much Abernethy means to our families and community and ensures they hear directly from the people who will be most affected by this decision. Every message helps demonstrate that keeping Abernethy open matters to our community.
+It’s important that we make our voices heard now, while the district is still considering its options. A personal email to the school board lets them know how much Abernethy means to our families and community and ensures they hear directly from the people who will be most affected by this decision. 
 
-- **Send an individual email to board members** ([template provided](https://docs.google.com/document/d/1sTqZhn--SFJgj76foELB0Y2w_lEixMCrHkhIzuCnxTo/edit?usp=sharing)) telling them what you love about Abernethy.
+- **Send an individual email to board members** telling them what you love about Abernethy and what you hope they'll consider as they make their choices about rightsizing. Copy & paste email addresses to send to all members of the PPS school board at once: csplitt@pps.net, mdepass@pps.net, psullivan@pps.net, rchasemiller@pps.net, vlaforte@pps.net, sengelsman@pps.net, eddiewang@pps.net, schoolboard@pps.net   
+
 - **Complete the [PPS survey](https://docs.google.com/forms/d/e/1FAIpQLSfIUOUJ8im4W9-t_-fLMf2hhhRxXMszLjFm0W1krEYT3hqVDg/viewform)** to give feedback on the district’s plans.
-- **Review the draft of our Abernethy PTA community letter** (coming soon), and submit your comments for improvements before the October 15 PTA community meeting. We want our collective voice to reflect the needs of each and every one of us.
 
-*Want inspiration?* A few Abernethy parents wrote [this awesome letter](https://www.oregonlive.com/opinion/2026/10/readers-respond-all-portlanders-affected-by-school-closures.html) published in the Oregonian on October 4.
+*Want inspiration?* A few Abernethy parents wrote [this awesome letter](https://www.oregonlive.com/opinion/2026/10/readers-respond-all-portlanders-affected-by-school-closures.html) published in the Oregonian on October 4, 2026.
 
 ## Important dates
 
-- **Tuesday, October 6, 6–8 pm, [501 N. Dixon Street, Portland, OR 97227](https://www.google.com/maps/search/501+N.+Dixon+Street,+Portland,+OR+97227):** A crucial PPS Board meeting where the district will share closure scenarios with the board.
-- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** [PTA community meeting](https://supportabernethy.org/meetings/), where we will discuss our PTA’s approach to rightsizing, regardless of the scenario we are facing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
+- **Thursday, October 15, 6:30–8 pm, Abernethy Auditorium:** [PTA community meeting](https://supportabernethy.org/meetings/), where we will discuss our PTA’s approach to rightsizing. We want to hear your voice there, so please plan to join us in person or on Zoom. Free childcare is provided, as at all PTA meetings.
 
 ## The action we want to see from our PPS leaders and lawmakers
 
@@ -56,4 +57,4 @@ It’s important that we make our voices heard now, while the district is still 
     - Schools: funding remodels and renovations, selling assets, etc.
     - Communities: how PPS will work with community partners to fill the gaps that school buildings leave behind
 
-In the end, it is our students who will bear the cost of “rightsizing.” District leaders must demonstrate that they are accountable by sharing the burden our students are facing. **It’s worth taking the time to get rightsizing right.**
+In the end, it is our students who will bear the cost of the choices adults make: whether rightsizing or maintaining the status quo. District leaders must demonstrate that they are accountable by sharing the burden our students are facing. **We all want to get rightsizing right.**
