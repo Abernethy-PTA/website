@@ -16,7 +16,7 @@ The Abernethy PTA aligns with other PPS communities in demanding a methodical, t
 PPS has released its potential scenarios to close schools and relocate programs.
 
 - **See [what PPS is sharing](https://www.pps.net/about/portland-public-schools-information/rightsize/rightsize)** about its plans for rightsizing.
-- **Review [direct impacts on Abernethy](https://drive.google.com/file/d/1j5f2EaTA_BLf-VqwVeijCanfIGyekmih/view)** about its plans for rightsizing.
+- **Review [the PPS family guide for Abernethy](/rightsizing/pps-family-guide-abernethy.pdf)** (PDF) showing the proposed changes and their direct impact on our school.
 - **Watch the [PPS Board's meeting](https://www.youtube.com/watch?v=zOUH2Jq7Owo)** when they heard details of the district's proposals and started discussion.
 - **Educate yourself.** This [community-made PPS Dashboard](https://ppsdata.info/) shows how closure might affect different schools across our city. [This PPS map](https://drive.google.com/file/d/1I4Vh8XCyjGLafcE2KQ4pRaIB6iyoOkv9/view?usp=drive_link) shows building utilization across the district. Utilization is how efficiently and effectively schools use their buildings relative to their student capacity (ex: are buildings overcrowded, underused, or right-sized?). It’s one of the factors district leaders will consider.
 - **Follow updates** in Principal Dunn’s weekly newsletter and on [Konstella](https://www.konstella.com/p/abernethy), the PTA’s app for connecting directly with families.
