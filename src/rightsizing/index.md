@@ -37,6 +37,8 @@ Every family at Abernethy will be impacted by this process differently, and ever
 
 It’s important that we make our voices heard now, while the district is still considering its options. A personal email to the school board lets them know how much Abernethy means to our families and community and ensures they hear directly from the people who will be most affected by this decision. 
 
+- **Explore your advocacy options** through our [Abernethy Advocacy Toolkit](https://docs.google.com/document/d/1kFSPEG2Kfhpwuxr-penmqPMSamtvwlCh5GqqCAldSOU/edit?usp=sharing): you’ll find contact information for decision makers, messaging suggestions, links, and sample letters.
+
 - **Send an individual email to board members** telling them what you love about Abernethy and what you hope they'll consider as they make their choices about rightsizing. Copy & paste email addresses to send to all members of the PPS school board at once: csplitt@pps.net, mdepass@pps.net, psullivan@pps.net, rchasemiller@pps.net, vlaforte@pps.net, sengelsman@pps.net, eddiewang@pps.net, schoolboard@pps.net   
 
 - **Complete the [PPS survey](https://docs.google.com/forms/d/e/1FAIpQLSfIUOUJ8im4W9-t_-fLMf2hhhRxXMszLjFm0W1krEYT3hqVDg/viewform)** to give feedback on the district’s plans.
@@ -58,3 +60,29 @@ It’s important that we make our voices heard now, while the district is still 
     - Communities: how PPS will work with community partners to fill the gaps that school buildings leave behind
 
 In the end, it is our students who will bear the cost of the choices adults make: whether rightsizing or maintaining the status quo. District leaders must demonstrate that they are accountable by sharing the burden our students are facing. **We all want to get rightsizing right.**
+
+## What we want for our school - Abernethy community discussion
+
+*At our October community meeting, PTA families discussed rightsizing, and this summary shares what we heard:*
+
+As a PTA, we believe that our educational system needs to change. We support parents advocating for what they feel is best for their students. The current path our schools are on is unsustainable and we know we cannot continue the “status quo.” 
+
+We want well-resourced schools for our kids and for district leaders to listen to us about what they look like. This includes:
+- caps on classroom sizes
+- unblended grades
+- full-time on-site specials teachers
+- a full-time on-site counselor
+- safe, accessible, and healthy building structures
+- challenge/TAG groups and reading supports 
+
+We want transparency and mutuality in this process. We want PPS leaders to listen to impacted communities and provide support before, during, and after transitions, especially for students moving between schools. We want clear communication about budgets and resource allocation. 
+
+We want to know that district leaders understand the full consequences of their proposals, the actions required to achieve the intended benefits, and will stand with us through these transitions.
+
+We encourage Abernethy families to [raise their voices](https://supportabernethy.org/programs/advocacy/) and express their own views on the rightsizing process by contacting district leaders. We are one community with many voices.  
+
+We are here to support you in raising your voices for our community. We are already actively engaging with our fellow SE PTAs in discussions with the School Board, our elected representatives, the District and our school leadership. We want to understand your perspective and empower action.
+
+For more information about how rightsizing may affect our school, review  [the PPS family guide for Abernethy](/rightsizing/pps-family-guide-abernethy.pdf), which shows the proposed changes and their direct impact on our school as published by the district.
+
+
