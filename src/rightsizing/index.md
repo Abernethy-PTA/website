@@ -79,10 +79,10 @@ We want transparency and mutuality in this process. We want PPS leaders to liste
 
 We want to know that district leaders understand the full consequences of their proposals, the actions required to achieve the intended benefits, and will stand with us through these transitions.
 
-We encourage Abernethy families to [raise their voices](https://supportabernethy.org/programs/advocacy/) and express their own views on the rightsizing process by contacting district leaders. We are one community with many voices.  
+We encourage Abernethy families to [raise their voices](/programs/advocacy/) and express their own views on the rightsizing process by contacting district leaders. We are one community with many voices.  
 
 We are here to support you in raising your voices for our community. We are already actively engaging with our fellow SE PTAs in discussions with the School Board, our elected representatives, the District and our school leadership. We want to understand your perspective and empower action.
 
-For more information about how rightsizing may affect our school, review  [the PPS family guide for Abernethy](/rightsizing/pps-family-guide-abernethy.pdf), which shows the proposed changes and their direct impact on our school as published by the district.
+For more information about how rightsizing may affect our school, review [the PPS family guide for Abernethy](/rightsizing/pps-family-guide-abernethy.pdf), which shows the proposed changes and their direct impact on our school as published by the district.
 
 
