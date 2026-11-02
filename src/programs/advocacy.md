@@ -21,7 +21,7 @@ You are invited to join in regular opportunities to advocate with your school co
 
 ### Student Action Workshops
 
-Second Fridays after school - meet at the gazebo
+Monthly, Fridays after school - meet at the gazebo
 
 Students, family, and community are invited to join our monthly workshops right after school where we will write letters to decision makers, draw art for public awareness, and do service projects for our neighbors. 
 
@@ -40,6 +40,10 @@ Parents and other grown-ups are invited to join us for coffee (with the Bike Bus
 ### Advocacy Committee
 
 If you want to get involved helping plan our advocacy efforts, join our Advocacy Committee. Email advocacy@supportabernethy.org to learn more.
+
+## Dive Deeper
+
+When you are ready to go and speak out, **explore your advocacy options** through our [Abernethy Advocacy Toolkit](https://docs.google.com/document/d/1kFSPEG2Kfhpwuxr-penmqPMSamtvwlCh5GqqCAldSOU/edit?usp=sharing): you’ll find contact information for decision makers, messaging suggestions, links, and sample letters. This toolkit is intended to empower students, families, and community members to advocate for the issues they care about, in their own voice whenever they want to.
 
 
 ## About Advocacy at Abernethy Elementary
